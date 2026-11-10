@@ -15,7 +15,7 @@ from urllib.parse import urlsplit
 
 from download_data import ensure_dataset
 from q4_llm_extraction.review_rules import (
-    CATEGORIES, SELLER_ACTIONS, SEVERITIES, baseline_sentiment,
+    CATEGORIES, SELLER_ACTIONS, SEVERITIES, TIME_EVIDENCE, baseline_sentiment,
     detect_issues, quote_is_safe, review_cues,
 )
 
@@ -230,17 +230,20 @@ def run_model(args, prompt: str, pending: list[Review], cache: dict, stats: Coun
 
 def merge_result(review: Review, baseline: list[dict], prediction) -> tuple[dict, bool]:
     issues = {issue["category"]: issue for issue in baseline}
+    base_categories = set(issues)
     sentiment = baseline_sentiment(review.score, review.text)
     confidence = 0.85 if issues else (0.3 if review.text else 0.0)
-    from_model = False
     if prediction and prediction["confidence"] >= 0.55:
         for issue in prediction["issues"]:
-            if issue["category"] not in issues:
-                issues[issue["category"]] = issue
-                from_model = True
-        if from_model:
-            sentiment = prediction["sentiment_score"]
-            confidence = prediction["confidence"]
+            issues.setdefault(issue["category"], issue)
+    delivery = issues.get("delivery_late")
+    if delivery and "missing_item" in issues and not TIME_EVIDENCE.search(delivery["evidence_quote"]):
+        # 若同评有缺件证据，未收到的短语可能指部分商品。保留有明确时间证据的迟到。
+        issues.pop("delivery_late")
+    from_model = bool(issues.keys() - base_categories)
+    if from_model:
+        sentiment = prediction["sentiment_score"]
+        confidence = prediction["confidence"]
     return {
         "review_id": review.review_id, "issues": list(issues.values()),
         "sentiment_score": sentiment, "actionable_for_seller": bool(issues.keys() & SELLER_ACTIONS),

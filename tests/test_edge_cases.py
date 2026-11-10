@@ -5,7 +5,7 @@ import unittest
 import pandas as pd
 
 from q3_etl_pipeline.pipeline import compute_rfm, filter_real_sales, match_returns
-from q4_llm_extraction.extract_reviews import Review, verify_prediction
+from q4_llm_extraction.extract_reviews import Review, merge_result, verify_prediction
 from q4_llm_extraction.review_rules import detect_issues
 
 
@@ -56,3 +56,12 @@ class ReviewTests(unittest.TestCase):
         }
         with self.assertRaises(ValueError):
             verify_prediction(result, review)
+
+    def test_partial_delivery_and_explicit_lateness(self):
+        for sentence, categories in (
+            ("O produto não foi entregue.", {"missing_item"}),
+            ("A entrega atrasou.", {"missing_item", "delivery_late"}),
+        ):
+            review = Review("sample", 1, "Recebi somente 1 item. " + sentence)
+            result, _ = merge_result(review, detect_issues(review.text), None)
+            self.assertEqual({issue["category"] for issue in result["issues"]}, categories)

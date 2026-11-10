@@ -28,6 +28,18 @@ def describe(counts: Counter) -> str:
     )
 
 
+def compare_nonempty(labels_path, texts, predictions, used_ids: set) -> Counter:
+    sample = json.loads(labels_path.read_text(encoding="utf-8"))
+    ids = {row[0] for row in sample}
+    assert len(sample) == len(ids) == 30 and used_ids.isdisjoint(ids), "样本规模或独立性错误"
+    used_ids.update(ids)
+    counts = Counter()
+    for review_id, categories in sample:
+        assert texts[review_id], review_id
+        counts.update(compare(predictions[review_id], set(categories)))
+    return counts
+
+
 def main() -> None:
     reviews, _ = load_reviews()
     texts = {review.review_id: review.text for review in reviews}
@@ -56,11 +68,8 @@ def main() -> None:
     assert predictions.keys() == texts.keys(), "输出评论集合与输入不一致"
 
     labels = json.loads((HERE / "evaluation_labels.json").read_text(encoding="utf-8"))
-    holdout = json.loads((HERE / "evaluation_holdout.json").read_text(encoding="utf-8"))
     development_ids = {row[0] for row in labels}
-    holdout_ids = {row[0] for row in holdout}
-    assert len(labels) == len(development_ids) == len(holdout) == len(holdout_ids) == 30
-    assert development_ids.isdisjoint(holdout_ids), "开发样本与留出样本重叠"
+    assert len(labels) == len(development_ids) == 30
     counts = Counter()
     by_stratum = {}
     differences = []
@@ -73,14 +82,12 @@ def main() -> None:
         if actual != expected:
             differences.append((review_id, stratum, sorted(expected - actual), sorted(actual - expected)))
 
-    holdout_counts = Counter()
-    for review_id, categories in holdout:
-        assert texts[review_id], review_id
-        holdout_counts.update(compare(predictions[review_id], set(categories)))
+    diagnostic_counts = compare_nonempty(HERE / "evaluation_holdout.json", texts, predictions, development_ids)
+    holdout_counts = compare_nonempty(HERE / "evaluation_final_sample.json", texts, predictions, development_ids)
     lines = [
         "# Q4 抽取准确率评估", "",
         "评估标签由 Codex 直接阅读葡语原文预标。正式评估需要葡语双人独立标注并仲裁分歧。"
-        "两个样本各 30 条，标签与发布结果可独立重算。",
+        "三批样本互不重叠，各有 30 条。标签与发布结果可独立重算。",
         "",
         "标注区分整单未收、部分缺件、送达超期和地址投递异常。正文只有情绪、正面送达评价或仍在等回复但无失联证据时，"
         "不推断具体问题。每个类别在同一评价最多计一次。", "",
@@ -105,8 +112,13 @@ def main() -> None:
     for review_id, stratum, missed, extra in differences:
         lines.append(f"| `{review_id}` | {stratum} | {', '.join(missed) or '—'} | {', '.join(extra) or '—'} |")
     lines.extend([
+        "", "## 第二批诊断样本", "",
+        "用种子 613 抽取非空正文，第一次对照的微平均 F1 为 15.8%。"
+        "检查漏报后补充未发货、损坏配件及投递异常等证据，并区分部分缺件和整单未收到。"
+        "以下仍是诊断样本的回归结果。", "",
+        describe(diagnostic_counts),
         "", "## 独立留出样本", "",
-        "规则封版后，从未参与调整的有正文评价中以种子 613 随机抽取 30 条，"
+        "发布规则完成后，在前两批以外的有正文评价中以种子 2401 随机抽取 30 条，"
         "先读正文确定参考类别，再对照发布结果。此样本只覆盖非空正文。", "",
         describe(holdout_counts), "",
         "较少见的拼写、替换词及隐含的数量和规格差异仍会漏报。复杂评论中，"

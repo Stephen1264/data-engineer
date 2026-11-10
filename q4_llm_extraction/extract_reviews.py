@@ -14,13 +14,17 @@ from time import monotonic
 from urllib.parse import urlsplit
 
 from download_data import ensure_dataset
+from q4_llm_extraction.evidence_guard import ground_issue
 from q4_llm_extraction.review_rules import (
-    CATEGORIES, SELLER_ACTIONS, SEVERITIES, TIME_EVIDENCE, baseline_sentiment,
+    CATEGORIES, PRIVATE_QUOTE, SELLER_ACTIONS, SEVERITIES, TIME_EVIDENCE, baseline_sentiment,
     detect_issues, quote_is_safe, review_cues,
 )
 
 HERE = Path(__file__).resolve().parent
 MODEL_CACHE = HERE / "llm_cache.json"
+SPAN_CACHE = HERE / "span_cache.json"
+SPAN_PROMPT = HERE / "span_prompt.txt"
+SUPPORT_PROMPT = HERE / "support_prompt.txt"
 OUTPUT = HERE / "extracted_issues.json"
 ISSUE_SCHEMA = {
     "type": "object",
@@ -81,7 +85,7 @@ def load_reviews() -> tuple[list[Review], int]:
     return [latest[review_id][1] for review_id in sorted(latest)], count
 
 
-def call_local_llm(url: str, payload: dict, timeout: float) -> dict:
+def call_local_llm(url: str, payload: dict, timeout: float, *, endpoint: str = "/v1/chat/completions") -> dict:
     target = urlsplit(url)
     if (
         target.scheme != "http" or target.hostname not in {"127.0.0.1", "localhost", "::1"}
@@ -95,7 +99,7 @@ def call_local_llm(url: str, payload: dict, timeout: float) -> dict:
     connection = http.client.HTTPConnection(target.hostname, target.port or 80, timeout=timeout)
     try:
         connection.request(
-            "POST", "/v1/chat/completions",
+            "POST", endpoint,
             body=json.dumps(payload, ensure_ascii=False).encode("utf-8"), headers=headers,
         )
         response = connection.getresponse()
@@ -132,7 +136,7 @@ def verify_prediction(value: dict, review: Review) -> dict:
         raise ValueError("置信度超出范围")
     if type(value.get("actionable_for_seller")) is not bool or not isinstance(value.get("issues"), list):
         raise ValueError("模型字段类型错误")
-    if len(value["issues"]) > 3:
+    if len(value["issues"]) > 4:
         raise ValueError("单条评价的问题数超出上限")
     verified = []
     for issue in value["issues"]:
@@ -143,7 +147,10 @@ def verify_prediction(value: dict, review: Review) -> dict:
         quote, translated = issue["evidence_quote"], issue["evidence_quote_en"]
         if not isinstance(quote, str) or not quote_is_safe(quote, review.text):
             raise ValueError("引用不在原文中、含隐私模式或长度异常")
-        if not isinstance(translated, str) or not 1 <= len(translated.strip()) <= 360:
+        if (
+            not isinstance(translated, str) or not 1 <= len(translated.strip()) <= 360
+            or PRIVATE_QUOTE.search(translated)
+        ):
             raise ValueError("英文证据缺失或过长")
         verified.append(issue)
     return {
@@ -176,12 +183,16 @@ def write_text_atomic(path: Path, text: str) -> None:
         staged.unlink(missing_ok=True)
 
 
-def read_cache(prompt_sha: str) -> dict:
-    if MODEL_CACHE.is_file():
-        payload = json.loads(MODEL_CACHE.read_text(encoding="utf-8"))
+def read_cache(prompt_sha: str, path: Path = MODEL_CACHE) -> dict:
+    if path.is_file():
+        payload = json.loads(path.read_text(encoding="utf-8"))
         if payload.get("prompt_sha256") == prompt_sha:
             return payload
     return {"model": None, "prompt_sha256": prompt_sha, "predictions": {}}
+
+
+def span_prompt_digest(selection: str, support: str) -> str:
+    return hashlib.sha256(f"{selection}\0{support}".encode("utf-8")).hexdigest()
 
 
 def cached_prediction(cache: dict, review: Review):
@@ -228,21 +239,29 @@ def run_model(args, prompt: str, pending: list[Review], cache: dict, stats: Coun
             print(f"Q4 模型已请求 {stats['llm_attempted']} 条，校验通过 {stats['llm_valid']} 条", flush=True)
 
 
-def merge_result(review: Review, baseline: list[dict], prediction) -> tuple[dict, bool]:
+def merge_result(review: Review, baseline: list[dict], prediction, *, use_model_sentiment=False) -> tuple[dict, bool]:
     issues = {issue["category"]: issue for issue in baseline}
     base_categories = set(issues)
     sentiment = baseline_sentiment(review.score, review.text)
     confidence = 0.85 if issues else (0.3 if review.text else 0.0)
     if prediction and prediction["confidence"] >= 0.55:
         for issue in prediction["issues"]:
-            issues.setdefault(issue["category"], issue)
+            category = issue["category"]
+            current = issues.get(category)
+            if current is None or (
+                category == "delivery_late" and TIME_EVIDENCE.search(issue["evidence_quote"])
+                and not TIME_EVIDENCE.search(current["evidence_quote"])
+            ):
+                issues[category] = issue
     delivery = issues.get("delivery_late")
     if delivery and "missing_item" in issues and not TIME_EVIDENCE.search(delivery["evidence_quote"]):
         # 若同评有缺件证据，未收到的短语可能指部分商品。保留有明确时间证据的迟到。
         issues.pop("delivery_late")
     from_model = bool(issues.keys() - base_categories)
-    if from_model:
+    use_model_sentiment = use_model_sentiment and prediction is not None
+    if from_model or use_model_sentiment:
         sentiment = prediction["sentiment_score"]
+    if from_model or (use_model_sentiment and not issues):
         confidence = prediction["confidence"]
     return {
         "review_id": review.review_id, "issues": list(issues.values()),
@@ -268,6 +287,10 @@ def main() -> None:
     prompt = (HERE / "prompt_template.txt").read_text(encoding="utf-8")
     prompt_sha = hashlib.sha256(prompt.encode("utf-8")).hexdigest()
     cache = read_cache(prompt_sha)
+    span_prompt_sha = span_prompt_digest(
+        SPAN_PROMPT.read_text(encoding="utf-8"), SUPPORT_PROMPT.read_text(encoding="utf-8"),
+    )
+    span_cache = read_cache(span_prompt_sha, SPAN_CACHE)
     reviews, raw_count = load_reviews()
     rules = {review.review_id: detect_issues(review.text) for review in reviews}
     candidates = []
@@ -293,12 +316,26 @@ def main() -> None:
 
     rows = []
     for review in reviews:
-        prediction = cached_prediction(cache, review)
-        result, from_model = merge_result(review, rules[review.review_id], prediction)
+        span_prediction = cached_prediction(span_cache, review)
+        if span_prediction is not None:
+            supported = []
+            for proposal in span_prediction["issues"]:
+                issue = ground_issue(proposal)
+                if issue is None:
+                    stats["guard_rejected"] += 1
+                else:
+                    stats["guard_relabeled"] += issue["category"] != proposal["category"]
+                    supported.append(issue)
+            span_prediction["issues"] = supported
+        prediction = span_prediction if span_prediction is not None else cached_prediction(cache, review)
+        result, from_model = merge_result(
+            review, rules[review.review_id], prediction, use_model_sentiment=span_prediction is not None,
+        )
         rows.append("  " + json.dumps(result, ensure_ascii=False, allow_nan=False))
         stats["with_issues"] += bool(result["issues"])
         stats["llm_enriched"] += from_model
         stats["cache_hits"] += prediction is not None
+        stats["span_cache_hits"] += span_prediction is not None
     write_text_atomic(OUTPUT, "[\n" + ",\n".join(rows) + "\n]\n")
     stats["elapsed_seconds"] = round(monotonic() - started, 3)
     if args.stats_json:

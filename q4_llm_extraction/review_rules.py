@@ -17,11 +17,16 @@ PATTERNS = {
         ("high", r"(?:ainda )?n[ãa]o recebi (?:o |meu )pedido(?!\s+(?:correto|certo|que|solicitado))",
          "I have not received the order"),
         ("high", r"(?:ainda )?n[ãa]o recebi (?:a|minha) mercadoria", "I have not received the goods"),
+        ("high", r"(?:ainda )?n[ãâa]o recebi (?:a|minha|esta) encomenda", "I have not received the package"),
+        ("high", r"(?:ainda )?n[ãâa]o recebi (?:a|minha) compra", "I have not received my purchase"),
+        ("high", r"n[ãâa]o recebi nada", "I did not receive anything"),
         ("high", r"^(?:pq |porque )?n[ãa]o entregou(?=[.!?\s]*$)", "It was not delivered"),
         ("high", r"n[ãa]o recebi[.!?]+\s+passou o dia de entrega", "I did not receive it. The delivery date has passed"),
         ("high", r"(?:ainda )?n[ãa]o (?:foi entregue|chegou)(?=[.!?\s]*$)", "It has not arrived"),
-        ("high", r"produto n[ãa]o (?:foi )?entregue", "The product was not delivered"),
-        ("high", r"pedido n[ãa]o (?:foi )?entregue", "The order was not delivered"),
+        ("medium", r"produto n[ãâa]o (?:foi )?entregue (?:no|dentro do) prazo", "The product was not delivered on time"),
+        ("medium", r"n[ãâa]o entreg(?:ou|aram) no prazo", "The order was not delivered on time"),
+        ("high", r"produto n[ãâa]o (?:foi )?entregue", "The product was not delivered"),
+        ("high", r"pedido n[ãâa]o (?:foi )?entregue", "The order was not delivered"),
         ("high", r"n[ãa]o envi(?:ou|aram) (?:o |meu )?pedido", "The order was not shipped"),
         ("high", r"(?:pedido|produto) (?:ainda )?n[ãa]o chegou", "It has not arrived"),
         ("high", r"(?:a |minha )?compra (?:ainda )?n[ãa]o chegou", "The purchase has not arrived"),
@@ -32,6 +37,7 @@ PATTERNS = {
         ("medium", r"j[áa] passou do prazo", "The deadline has already passed"),
         ("medium", r"atraso na entrega", "Delivery delay"),
         ("medium", r"demora na entrega", "Slow delivery"),
+        ("medium", r"a entrega demorou", "Delivery took a long time"),
         ("medium", r"entrega atrasou", "Delivery was late"),
         ("medium", r"chegou atrasad[oa]", "It arrived late"),
         ("medium", r"entrega fora do prazo", "Delivery after the deadline"),
@@ -73,6 +79,7 @@ PATTERNS = {
         ("high", r"faltou uma pe[çc]a", "A part was missing"),
         ("high", r"faltou um item", "An item was missing"),
         ("high", r"faltou um produto", "A product was missing"),
+        ("high", r"faltou 1 produto", "One product was missing"),
         ("high", r"n[ãa]o recebi (?:um|uma) dos produtos", "I did not receive one of the products"),
         ("high", r"recebi (?:somente|apenas|s[óo]) (?:um|1) item", "I received only one item"),
         ("high", r"aguardo a entrega do segundo produto", "I am waiting for the second product to be delivered"),
@@ -83,11 +90,18 @@ PATTERNS = {
     "seller_communication": (
         ("medium", r"(?:o )?vendedor n[ãa]o (?:me )?respondeu", "The seller did not reply"),
         ("medium", r"sem retorno do vendedor", "No reply from the seller"),
+        ("medium", r"n[ãa]o (?:obtive|tive|recebi) (?:nenhum )?retorno", "I received no reply"),
+        ("medium", r"n[ãa]o (?:obtive|tive|recebi) (?:nenhuma )?resposta", "I received no answer"),
+        ("medium", r"ningu[eé]m (?:me )?respondeu", "Nobody replied to me"),
+        ("medium", r"n[ãa]o entraram em contato", "They did not contact me"),
+        ("medium", r"n[ãa]o retorn(?:ou|aram) (?:meus|os) contatos", "They did not return my calls or messages"),
+        ("medium", r"nenhum comunicado sobre o motivo", "There was no communication about the reason"),
         ("medium", r"n[ãa]o consigo (?:entrar em contato com|contatar) (?:o )?vendedor", "I cannot contact the seller"),
         ("medium", r"cancelou sem avisar", "They canceled without notifying me"),
     ),
     "packaging": (
         ("medium", r"embalagem (?:estava )?danificada", "The packaging was damaged"),
+        ("medium", r"embalagem (?:estava |veio )?rasgada", "The packaging was torn"),
         ("medium", r"caixa (?:estava |chegou )?amassada", "The box was dented"),
         ("medium", r"embalagem totalmente sem seguran[çc]a", "The packaging provided no protection"),
         ("medium", r"solt[oa] dentro da caixa", "Loose inside the box"),
@@ -100,6 +114,9 @@ PATTERNS = {
         ("medium", r"n[ãa]o foi entregue na minha casa", "It was not delivered to my home"),
         ("medium", r"tive que ir retirar", "I had to go and pick it up"),
         ("medium", r"chave de NF-e inv[áa]lida", "Invalid electronic invoice key"),
+        ("medium", r"faltando a nota fiscal", "The invoice was missing"),
+        ("medium", r"sem (?:a )?nota fiscal", "Without the invoice"),
+        ("medium", r"produto indispon[íi]vel ap[óo]s aprova[çc][ãa]o da compra", "The product was unavailable after the purchase was approved"),
     ),
 }
 RULES = [
@@ -118,11 +135,13 @@ CLUES = {
 CLUE_RULES = {key: re.compile(value, re.IGNORECASE) for key, value in CLUES.items()}
 TIME_EVIDENCE = re.compile(r"atras|prazo|dia de entrega|demora", re.IGNORECASE)
 POSITIVE_SHORT = re.compile(
-    r"(?:muito )?(?:bom|boa)|bom produto|[óo]tim[oa]|excelente|recomendo|gostei|satisfeit[oa]", re.IGNORECASE,
+    r"(?:muito )?(?:bom|boa)|bom produto|[óo]tim[oa]|excelente|recomendo|gostei|satisfeit[oa]|legal|top|amei",
+    re.IGNORECASE,
 )
+NEUTRAL_SHORT = re.compile(r"ok|regular|normal|razo[áa]vel", re.IGNORECASE)
 PRIVATE_QUOTE = re.compile(
-    r"https?://|[\w.+-]+@[\w.-]+\.[a-z]{2,}|(?:\d[\s().-]*){8,}|"
-    r"\b(?:meu nome|meu cpf|meu endere[çc]o|moro na|rua|avenida)\b",
+    r"https?://|www\.|[\w.+-]+@[\w.-]+\.[a-z]{2,}|(?:\d[\s().-]*){8,}|"
+    r"\b(?:meu nome|me chamo|meu cpf|meu endere[çc]o|moro na|rua|avenida)\b",
     re.IGNORECASE,
 )
 
@@ -159,6 +178,9 @@ def review_cues(text: str) -> set[str]:
 def baseline_sentiment(score: int, text: str) -> float:
     if not text:
         return 0.0
-    if POSITIVE_SHORT.fullmatch(text.strip(" .!\r\n")):
+    short = text.strip(" .,!?:;\n\r\t")
+    if POSITIVE_SHORT.fullmatch(short):
         return 0.5
+    if NEUTRAL_SHORT.fullmatch(short):
+        return 0.0
     return {1: -0.9, 2: -0.65, 3: -0.35}[score]

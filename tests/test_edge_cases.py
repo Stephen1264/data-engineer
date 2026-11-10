@@ -1,12 +1,17 @@
 """回归核对取消的时间边界和评价证据。"""
 
 import unittest
+from time import monotonic
+from unittest.mock import patch
 
 import pandas as pd
 
 from q3_etl_pipeline.pipeline import compute_rfm, filter_real_sales, match_returns
 from q4_llm_extraction.extract_reviews import Review, merge_result, verify_prediction
+from q4_llm_extraction.evidence_guard import ground_issue, supports_category
 from q4_llm_extraction.review_rules import detect_issues
+from q4_llm_extraction.build_span_cache import classify_packet
+from q4_llm_extraction.span_inference import decode_selection, source_spans, supported_issues
 
 
 class ReturnsTests(unittest.TestCase):
@@ -65,3 +70,62 @@ class ReviewTests(unittest.TestCase):
             review = Review("sample", 1, "Recebi somente 1 item. " + sentence)
             result, _ = merge_result(review, detect_issues(review.text), None)
             self.assertEqual({issue["category"] for issue in result["issues"]}, categories)
+
+    def test_span_range_keeps_both_quantity_statements(self):
+        source = "Comprei DUAS unidades.\r\nSó veio uma."
+        sentiment, issues = decode_selection("N M123", source, source_spans(source))
+        self.assertLess(sentiment, 0)
+        self.assertEqual(issues, [{
+            "category": "missing_item", "severity": "high", "evidence_quote": source,
+        }])
+        self.assertEqual(supported_issues("0", issues), [])
+        with self.assertRaises(ValueError):
+            supported_issues("10", issues)
+
+    def test_explicit_late_evidence_survives_partial_delivery_merge(self):
+        quote = "Não recebi o produto no prazo."
+        review = Review("sample", 1, "Recebi somente 1 item. " + quote)
+        prediction = {
+            "issues": [{
+                "category": "delivery_late", "severity": "medium",
+                "evidence_quote": quote, "evidence_quote_en": "I did not receive the product on time.",
+            }],
+            "sentiment_score": -0.7, "actionable_for_seller": False, "confidence": 0.72,
+        }
+        result, _ = merge_result(review, detect_issues(review.text), prediction)
+        self.assertEqual({issue["category"]: issue["evidence_quote"] for issue in result["issues"]}, {
+            "missing_item": "Recebi somente 1 item", "delivery_late": quote,
+        })
+
+    def test_span_rejects_reversed_range_and_private_quote(self):
+        source = "Meu CPF é 123.456.789-12. O aparelho não liga."
+        _, issues = decode_selection("N C111 L211 D222", source, source_spans(source))
+        self.assertEqual([issue["evidence_quote"] for issue in issues], ["O aparelho não liga."])
+
+    def test_truncated_packet_cannot_shift_predictions_between_reviews(self):
+        reviews = [Review("a", 1, "A entrega atrasou."), Review("b", 2, "O produto veio quebrado.")]
+        with patch("q4_llm_extraction.build_span_cache.call_local_llm", return_value={"content": "N L112"}):
+            selected, stats = classify_packet("http://localhost", "prompt", reviews, monotonic() + 10)
+        self.assertEqual(selected, [])
+        self.assertEqual(stats["failed_packets"], 1)
+
+    def test_category_guard_requires_specific_claim_in_quote(self):
+        for category, quote, expected in (
+            ("missing_item", "Comprei 05 unidades do produto.", False),
+            ("missing_item", "Comprei dois livros e recebi somente 1.", True),
+            ("missing_item", "O pacote chegou só um dia depois.", False),
+            ("delivery_late", "Ainda não mandaram todos os produtos!", False),
+            ("delivery_late", "O produto não foi entregue dentro do prazo.", True),
+            ("seller_communication", "Gostaria de um retorno, pois já paguei.", False),
+            ("seller_communication", "Escrevi para a loja e ninguém me respondeu.", True),
+            ("packaging", "Abri a caixa e veio um modelo errado.", False),
+            ("packaging", "A caixa chegou toda amassada.", True),
+        ):
+            with self.subTest(category=category, quote=quote):
+                self.assertEqual(supports_category(category, quote), expected)
+        issue = {
+            "category": "delivery_late", "severity": "high",
+            "evidence_quote": "Chegou um dos produtos, porém o outro não chegou.",
+            "evidence_quote_en": "One of the products arrived, but the other did not.",
+        }
+        self.assertEqual(ground_issue(issue), {**issue, "category": "missing_item"})

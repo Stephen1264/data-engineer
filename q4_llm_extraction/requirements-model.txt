@@ -1,0 +1,3 @@
+ctranslate2==4.6.0
+sentencepiece==0.2.1
+PyYAML==6.0.2

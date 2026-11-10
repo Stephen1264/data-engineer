@@ -45,12 +45,15 @@ python -m q4_llm_extraction.evaluate
 
 ## 重跑模型
 
-默认用同一份输入和提示词指纹复用已校验的本地推理结果。空缓存时可独立跑规则基线。重跑推理需要 llama.cpp 和 Qwen2.5-3B Instruct Q4_K_M GGUF。测试版本为 llama.cpp b12241，模型是 Ollama 公开清单中的 `qwen2.5:3b`，权重 SHA-256 为 `5ee4f07cdb9beadbbb293e85803c569b01bd37ed059d2715faa7bb405f31caa6`。可从官方模型或发行清单取得相同权重。 [llama.cpp 发行页](https://github.com/ggml-org/llama.cpp/releases/tag/b12241) · [模型清单](https://ollama.com/library/qwen2.5:3b)
+常规运行会复用已提交的缓存。缓存以正文和提示词指纹校验，空缓存仍可跑规则基线。若需从头重算本地推理，准备 llama.cpp b12241、Qwen3-4B-Instruct-2507 Q4_K_M GGUF，以及解压后的 Argos 葡语到英语 1.9 模型。Qwen 权重 SHA-256 为 `85e4a5b7b8ef0e48af0e8658f5aaab9c2324c76c1641493f4d1e25fce54b18b9`，Argos 模型包 SHA-256 为 `ae76df6f650895c16f2b582065014fab496755ca846ecb19fae81d51f332a38e`。 [llama.cpp 发行页](https://github.com/ggml-org/llama.cpp/releases/tag/b12241) · [Qwen 权重清单](https://ollama.com/library/qwen3:4b-instruct-2507-q4_K_M) · [Argos 模型包](https://argos-net.com/v1/translate-pt_en-1_9.argosmodel)
 
 ```bash
-llama-server --model qwen2.5-3b.gguf --alias qwen2.5-3b --host 127.0.0.1 --port 8080 --ctx-size 8192 --parallel 2 -ngl 99 --no-ui
-python -m q4_llm_extraction.extract_reviews --llm-url http://127.0.0.1:8080 --llm-limit 300 --refresh-llm
+python -m pip install -r q4_llm_extraction/requirements-model.txt
+llama-server --model qwen3-4b-instruct-q4_k_m.gguf --alias qwen3-4b-instruct-2507 --host 127.0.0.1 --port 8080 --ctx-size 24576 --parallel 16 --no-kv-unified --flash-attn on --cache-type-k q8_0 --cache-type-v q8_0 --cache-ram 0 -ngl 99 --no-ui
+# 模型服务启动后，在另一终端运行
+python -m q4_llm_extraction.build_span_cache --llm-url http://127.0.0.1:8080 --translation-model /path/to/translate-pt_en-1_9 --batch-size 4 --workers 16 --checkpoint /tmp/gekkolab-q4-progress.json
+python -m q4_llm_extraction.extract_reviews
 python -m q4_llm_extraction.evaluate
 ```
 
-如在共享机器使用本地服务，可给服务设置 API 密钥，并给客户端设置 `GEKKO_LLM_API_KEY`。CPU 环境可以将 GPU 层设为 0，并按吞吐调低推理上限。默认运行使用随提交提供的模型结果缓存，便于在无 GPU 的环境复现。
+若服务启用了 API 密钥，在客户端设置 `GEKKO_LLM_API_KEY`。续跑文件记录已完成的编号选择，放在仓库外。重算测试用 RTX 4070 Laptop GPU，较慢的机器可能在时限内只生成部分缓存。复现已提交结果只需运行抽取和评估入口。

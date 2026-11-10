@@ -1,0 +1,2613 @@
+{
+  "model": "qwen2.5-3b",
+  "prompt_sha256": "6244fc219d205a7469812bccfc04125c7667810225011b2e0a30b634f2c836db",
+  "predictions": {
+    "3a9895057cba104e3fa196a04177a2a2": {
+      "input_sha256": "2a416019af141e782c68f02ff298f9dfc58135b70adbf55c39c33a921387c06d",
+      "result": {
+        "issues": [
+          {
+            "category": "wrong_product",
+            "severity": "high",
+            "evidence_quote": "Produto entregue mas não o que de fato comprei, destarte considero não entregue. Funko errado, coleção errada e caixa parecendo bagaço de cana de tão surrada.",
+            "evidence_quote_en": "Produto delivered but not what I actually bought, consider it not delivered. Funko wrong, collection wrong and box looking like garbage of a cane so damaged."
+          },
+          {
+            "category": "missing_item",
+            "severity": "high",
+            "evidence_quote": "Informo ainda que há solicitação aberta.",
+            "evidence_quote_en": "Informing that there is still an open request."
+          }
+        ],
+        "sentiment_score": 0.5,
+        "actionable_for_seller": true,
+        "confidence": 0.9
+      }
+    },
+    "5fcfab15e41dec56d42c883a668635a3": {
+      "input_sha256": "30f507460c7c35dfa8974a3c2791a9e78e85c65339f27be0a2ff858207b234f1",
+      "result": {
+        "issues": [
+          {
+            "category": "missing_item",
+            "severity": "high",
+            "evidence_quote": "Comprei 2 (dois) Tablet Qbex Zupin TX120 7\" 4GB Dual Core Android 4.2 Preto e recebi apenas 1 (um).",
+            "evidence_quote_en": "I bought 2 (two) Tablet Qbex Zupin TX120 7\" 4GB Dual Core Android 4.2 Black and received only 1 (one)."
+          }
+        ],
+        "sentiment_score": -0.5,
+        "actionable_for_seller": true,
+        "confidence": 0.9
+      }
+    },
+    "58d58c288b68273f171212416f091d76": {
+      "input_sha256": "65b7b3f407e9b3fda4f014ccd9c168c51864acc47e425f5c573999ee06b18036",
+      "result": {
+        "issues": [
+          {
+            "category": "missing_item",
+            "severity": "high",
+            "evidence_quote": "Efetuei a compra de 04 unidades conforme nota fiscal, porém recebi somente 01 unidade. Ou seja, estão faltando 03 unidades.",
+            "evidence_quote_en": "I made the purchase of 04 units according to the invoice, but received only 01 unit. In other words, there are 03 units missing."
+          }
+        ],
+        "sentiment_score": -0.5,
+        "actionable_for_seller": true,
+        "confidence": 0.9
+      }
+    },
+    "ba111b6b5d6264a80e54cd109c98398c": {
+      "input_sha256": "3edc0b5a15866fb72c831f02788012f4ecf33368514d6d8aec6c3800aee50766",
+      "result": {
+        "issues": [
+          {
+            "category": "missing_item",
+            "severity": "high",
+            "evidence_quote": "comprei tres rolos de papel de parede ,recebi somente 1 naoestou conseguindo entrar em contato",
+            "evidence_quote_en": "I bought three rolls of wallpaper, received only one, I am unable to contact."
+          }
+        ],
+        "sentiment_score": 1,
+        "actionable_for_seller": true,
+        "confidence": 1
+      }
+    },
+    "a992dd82e333f006157661b1b647fe92": {
+      "input_sha256": "0552e7cf744eabbd1f69847101b26fe8b7b9eda0e804926c49d77cc0cceffef8",
+      "result": {
+        "issues": [
+          {
+            "category": "missing_item",
+            "severity": "high",
+            "evidence_quote": "recebi apenas 1 kit (vermelho) não recebi o amarelo.",
+            "evidence_quote_en": "I received only 1 kit (red) and did not receive the yellow one."
+          }
+        ],
+        "sentiment_score": 1,
+        "actionable_for_seller": true,
+        "confidence": 1
+      }
+    },
+    "d89e30c85c4aef2cb38a06fb7c330a03": {
+      "input_sha256": "9ad8b29a74ae39b5fbaa8dfa6e742966ca577c1f68813b6b4f6f4e247fefe409",
+      "result": {
+        "issues": [
+          {
+            "category": "delivery_late",
+            "severity": "high",
+            "evidence_quote": "O produto demorou demais pra ser entregue.. um mês!",
+            "evidence_quote_en": "The product took too long to be delivered.. a month!"
+          },
+          {
+            "category": "wrong_product",
+            "severity": "high",
+            "evidence_quote": "O produto demorou demais pra ser entregue.. um mês!",
+            "evidence_quote_en": "The product took too long to be delivered.. a month!"
+          },
+          {
+            "category": "quality_defect",
+            "severity": "medium",
+            "evidence_quote": "O relógio veio configurado hora e outras funç",
+            "evidence_quote_en": "The clock was set to the wrong time and other functions."
+          }
+        ],
+        "sentiment_score": 0.5,
+        "actionable_for_seller": false,
+        "confidence": 0.8
+      }
+    },
+    "3ddf8cae85b066e8dbc7f46961bfb6b4": {
+      "input_sha256": "d7aa3b3109841f03af19a0e97dbb4bb4367e4c98914a811ce9f9c6f326c5fbfd",
+      "result": {
+        "issues": [
+          {
+            "category": "missing_item",
+            "severity": "high",
+            "evidence_quote": "Insatisfeita, porque foi entregue faltando 02 panos de prato, vierão somente 05 panos e eu paguei por 07 panos.",
+            "evidence_quote_en": "Insatisfied, because it was delivered missing 02 dish cloths, only 05 will be delivered and I paid for 07."
+          },
+          {
+            "category": "seller_communication",
+            "severity": "high",
+            "evidence_quote": "Vou fica no prejuízo, mas não compro mais nada... E não recomendo este vendedor.",
+            "evidence_quote_en": "I will lose money, but I won't buy from you anymore... And I don't recommend this seller."
+          }
+        ],
+        "sentiment_score": 0.5,
+        "actionable_for_seller": true,
+        "confidence": 0.9
+      }
+    },
+    "5beb9901b34aedf9d008f16f3e10ecd5": {
+      "input_sha256": "5dda06cc18a4ab2206dc26a7bad98d05619bf8044a76629964e466bb5342dda7",
+      "result": {
+        "issues": [
+          {
+            "category": "missing_item",
+            "severity": "high",
+            "evidence_quote": "Recebi apenas metade dos produtos e não consigo contato com vocês!!!",
+            "evidence_quote_en": "I received only half of the products and I can't contact you!!"
+          }
+        ],
+        "sentiment_score": -0.5,
+        "actionable_for_seller": true,
+        "confidence": 0.9
+      }
+    },
+    "3048ab17e39285ed6f995b5dcd0e74db": {
+      "input_sha256": "6dfbb6fb53d140fe62bf572f7d0f75f5ba56a3eec03881b0f7c3c64f3ee7a7e7",
+      "result": {
+        "issues": [
+          {
+            "category": "missing_item",
+            "severity": "high",
+            "evidence_quote": "Comprei 6 cartuchos, recebi apenas 4 unidades após o prazo de entrega, e ate hoje estou tentando entrar em contato para uma solução, mas sem sucesso.",
+            "evidence_quote_en": "I bought 6 cartridges, received only 4 units after the delivery deadline, and I have been trying to contact you for a solution, but without success."
+          }
+        ],
+        "sentiment_score": -0.5,
+        "actionable_for_seller": true,
+        "confidence": 0.9
+      }
+    },
+    "6ff808d47fc305b78def506a8cfabc06": {
+      "input_sha256": "6c87f8d96545ec95ff6e89d9cd4038df4cdd11d85771d55f06aff43891f21839",
+      "result": {
+        "issues": [
+          {
+            "category": "missing_item",
+            "severity": "high",
+            "evidence_quote": "Fiz a compra de 2 gaiolas, mais somente 1 chegou !",
+            "evidence_quote_en": "I bought 2 cages, but only 1 arrived !"
+          },
+          {
+            "category": "seller_communication",
+            "severity": "high",
+            "evidence_quote": "Até agora não entraram em contato para esclarecer o ocorrido !",
+            "evidence_quote_en": "Until now, they have not contacted me to clarify the issue !"
+          }
+        ],
+        "sentiment_score": 0.5,
+        "actionable_for_seller": true,
+        "confidence": 0.9
+      }
+    },
+    "2c185e6d9011debc67d272354ee03406": {
+      "input_sha256": "aa7da069706463ed184ffa7ba1661975a6a2d6e123abb3ca4b65c983bf86e762",
+      "result": {
+        "issues": [
+          {
+            "category": "missing_item",
+            "severity": "high",
+            "evidence_quote": "Comprei 2 conforme pedido. Recebi apenas 1. Inclusive a nota fiscal é só de 1.",
+            "evidence_quote_en": "I bought 2 as requested. I received only 1. The invoice is only for 1."
+          },
+          {
+            "category": "seller_communication",
+            "severity": "high",
+            "evidence_quote": "Já foi enviado um e-mail pra stark sobre o fato, aguardando retorno.",
+            "evidence_quote_en": "I sent an email to stark about the issue, waiting for a response."
+          }
+        ],
+        "sentiment_score": 0.5,
+        "actionable_for_seller": true,
+        "confidence": 0.9
+      }
+    },
+    "d733618a1d2e550024ca416c715dbf9c": {
+      "input_sha256": "198d5f8cd4f0544fcc11c41081797f1b6d6b45298e561454645886157c484cef",
+      "result": {
+        "issues": [
+          {
+            "category": "wrong_product",
+            "severity": "high",
+            "evidence_quote": "O produto chegou errado, estou aguardando retorno.",
+            "evidence_quote_en": "The product arrived wrong, waiting for a return."
+          }
+        ],
+        "sentiment_score": 0.5,
+        "actionable_for_seller": true,
+        "confidence": 0.9
+      }
+    },
+    "b9326e8616bfd6040691de0f511a919e": {
+      "input_sha256": "39ca87e9981455426c163eae946a1ec4e67fdfa9da16fec60bb6b387c381454d",
+      "result": {
+        "issues": [
+          {
+            "category": "seller_communication",
+            "severity": "high",
+            "evidence_quote": "Aguardo retorno urgente",
+            "evidence_quote_en": "Aguardo retorno urgente"
+          }
+        ],
+        "sentiment_score": -0.5,
+        "actionable_for_seller": false,
+        "confidence": 0.9
+      }
+    },
+    "58f1655df206a9a40482b929b81ee671": {
+      "input_sha256": "21f00147f92a8d1714ae7095991fa6d7679e3e7118afae3344a40727943d5c77",
+      "result": {
+        "issues": [
+          {
+            "category": "wrong_product",
+            "severity": "medium",
+            "evidence_quote": "O produto me chegou divergindo em relação ao informado no site sobre o funcionamento do mesmo.",
+            "evidence_quote_en": "The product arrived different from what was informed on the site about its functionality."
+          }
+        ],
+        "sentiment_score": -0.5,
+        "actionable_for_seller": true,
+        "confidence": 0.8
+      }
+    },
+    "f34b0cf896382651264362f7fa1ede4c": {
+      "input_sha256": "8beecb8f60526c2bcff35ebc9dde743bc0dcbcb9f8b9c18f148104704c9a5f0b",
+      "result": {
+        "issues": [
+          {
+            "category": "wrong_product",
+            "severity": "high",
+            "evidence_quote": "todavia recebi apenas um desses produtos, como deve proceder????",
+            "evidence_quote_en": "I received only one of these products, how should I proceed????"
+          }
+        ],
+        "sentiment_score": 1,
+        "actionable_for_seller": true,
+        "confidence": 1
+      }
+    },
+    "e5ae2169da96eae916e3e8a52b851a5e": {
+      "input_sha256": "dcf93811c7ce22da96047278ed0b26d73fe41d727b837b35576836bc6cf08387",
+      "result": {
+        "issues": [
+          {
+            "category": "missing_item",
+            "severity": "high",
+            "evidence_quote": "Comprei 2 capas e 2 películas, mas recebi apenas 1 capa e 1 película.",
+            "evidence_quote_en": "I bought 2 covers and 2 films, but I received only 1 cover and 1 film."
+          }
+        ],
+        "sentiment_score": 1,
+        "actionable_for_seller": true,
+        "confidence": 1
+      }
+    },
+    "5a264eb4d6395b924011de41666451d6": {
+      "input_sha256": "6c1e64fc6a4e6a76cb4deec5415b4866b78e48ffcf5220a40a87b8cbbf681330",
+      "result": {
+        "issues": [
+          {
+            "category": "missing_item",
+            "severity": "high",
+            "evidence_quote": "Comprei 2 elefantes e a entrega foi de apenas 1 elefante. Por enquanto ainda não sei se receberei o outro, pois já reclamei e não obtive retorno",
+            "evidence_quote_en": "I bought 2 elephants and the delivery was only 1 elephant. As of now, I don't know if I will receive the other one, as I have already complained and did not receive a response."
+          }
+        ],
+        "sentiment_score": 1,
+        "actionable_for_seller": true,
+        "confidence": 1
+      }
+    },
+    "9ec63e6e46c8e55b63c015a61806e3f8": {
+      "input_sha256": "ecde3e734e2dd09dda36c741875797a25b6fa395ab7877a35d6737409f2db995",
+      "result": {
+        "issues": [
+          {
+            "category": "missing_item",
+            "severity": "high",
+            "evidence_quote": "Recebi parte dos ítens comprados, apenas 3 unidades do kit na cor pérola faltaram as 2 unidades do kit na cor preta.",
+            "evidence_quote_en": "I received only 3 units of the kit in pearl color, and 2 units of the kit in black color were missing."
+          }
+        ],
+        "sentiment_score": 0.5,
+        "actionable_for_seller": true,
+        "confidence": 0.9
+      }
+    },
+    "8341c8e936454d7de07e3c4e0381057d": {
+      "input_sha256": "205d54e5246eb902baed502481c36a5a249e2e7f18443bccdb8c3ad894a61df3",
+      "result": {
+        "issues": [
+          {
+            "category": "wrong_product",
+            "severity": "high",
+            "evidence_quote": "Pedi duas unidades do produto e recebi somente uma. Alem disso recebi outro produto que nao comprei.",
+            "evidence_quote_en": "I ordered two units of the product, but only received one. Additionally, I received another product that I did not order."
+          }
+        ],
+        "sentiment_score": 0.5,
+        "actionable_for_seller": true,
+        "confidence": 0.9
+      }
+    },
+    "85c793c4333f1d0cdc48faf45c5d7657": {
+      "input_sha256": "4c0f596b1c5f29192d517d0017a99f103e17e2ef1c9e14d4814c709503fee896",
+      "result": {
+        "issues": [
+          {
+            "category": "wrong_product",
+            "severity": "high",
+            "evidence_quote": "Comprei caixa de passagem marca durin e recebi outra caixa de marca diferente.",
+            "evidence_quote_en": "I bought a Durin brand passage box and received a box of a different brand."
+          }
+        ],
+        "sentiment_score": 1,
+        "actionable_for_seller": true,
+        "confidence": 1
+      }
+    },
+    "11b0436a00c189318d1c6a061dee0bc3": {
+      "input_sha256": "e88eee8d6751c2e251bb3a30684c3f42e1b19ea0c8754ae2caf1de30c8d8b7e1",
+      "result": {
+        "issues": [
+          {
+            "category": "wrong_product",
+            "severity": "high",
+            "evidence_quote": "Comprei 3 produtos, de três parceiros diferentes, os outros dois recebi tudo certinho, desta loja veio apenas uma desculpa esfarrapada.",
+            "evidence_quote_en": "I bought 3 products from 3 different partners, the other two received everything correctly, this store only sent one excuse."
+          }
+        ],
+        "sentiment_score": 1,
+        "actionable_for_seller": true,
+        "confidence": 1
+      }
+    },
+    "a074a7b17119653287035cfbcbac4b7c": {
+      "input_sha256": "c88354f8988aa39944e1e3048ebdf3bcb28df18d52d6d3d4ea938af62c873bd3",
+      "result": {
+        "issues": [
+          {
+            "category": "quality_defect",
+            "severity": "high",
+            "evidence_quote": "as rodas n giram..encosto c.defeito..odiei",
+            "evidence_quote_en": "the wheels don't turn... stuck with a defect... I hated it"
+          },
+          {
+            "category": "packaging",
+            "severity": "high",
+            "evidence_quote": "mal acondicionada",
+            "evidence_quote_en": "mal acondicionada"
+          }
+        ],
+        "sentiment_score": 0.5,
+        "actionable_for_seller": true,
+        "confidence": 0.8
+      }
+    },
+    "781f134ca0ee144ca888fef16c8fa4e3": {
+      "input_sha256": "8caa34e3486b4bf90e67d719cf5797d5baeb43a866b2538be79a51bef6a77823",
+      "result": {
+        "issues": [
+          {
+            "category": "wrong_product",
+            "severity": "high",
+            "evidence_quote": "Ainda não posso avaliar a loja, pois recebi meu produto com defeito e estou desde sábado tentando entrar em contato e ainda não obtive nenhuma resposta.",
+            "evidence_quote_en": "I still can't evaluate the store, because I received the product with a defect and have been trying to contact them since Saturday and still haven't received any response."
+          },
+          {
+            "category": "seller_communication",
+            "severity": "high",
+            "evidence_quote": "Ainda não posso avaliar a loja, pois recebi meu produto com defeito e estou desde sábado tentando entrar em contato e ainda não obtive nenhuma resposta.",
+            "evidence_quote_en": "I still can't evaluate the store, because I received the product with a defect and have been trying to contact them since Saturday and still haven't received any response."
+          }
+        ],
+        "sentiment_score": -0.5,
+        "actionable_for_seller": false,
+        "confidence": 0.9
+      }
+    },
+    "b123c87a07ac962184a21b6cbf967f8f": {
+      "input_sha256": "c68405b97569a039a3abb7dc213bab79d66a1f9054166cde2a84958723833a3b",
+      "result": {
+        "issues": [
+          {
+            "category": "wrong_product",
+            "severity": "medium",
+            "evidence_quote": "Mas é a primeira vez que compro neste site e vem produto errado.",
+            "evidence_quote_en": "It's the first time I buy from this site and the product is wrong."
+          }
+        ],
+        "sentiment_score": -0.5,
+        "actionable_for_seller": true,
+        "confidence": 0.8
+      }
+    },
+    "9d8a6a5613b6a6708c464de769bb4f88": {
+      "input_sha256": "4714b1c2597f6634fd106ae78727a17b24236276c8e21f1e031509d500ca9d91",
+      "result": {
+        "issues": [
+          {
+            "category": "missing_item",
+            "severity": "high",
+            "evidence_quote": "Recebi apenas 4 itens da Nota Fiscal.\r\nCompramos 5 trocadores.\r\nEstamos no aguardo de mais uma peça.",
+            "evidence_quote_en": "We bought 5 switches, but only received 4 items from the invoice. We are awaiting the delivery of another piece."
+          }
+        ],
+        "sentiment_score": 1,
+        "actionable_for_seller": true,
+        "confidence": 1
+      }
+    },
+    "6afb9abc15ff32b17abc8f3f819ade1f": {
+      "input_sha256": "64509e0dfb1167e90784f3fbdd7195b52b27aff30af3dab15ea8a1bee8ec4d42",
+      "result": {
+        "issues": [
+          {
+            "category": "packaging",
+            "severity": "high",
+            "evidence_quote": "A embalagem veio danificada assim como o produto, quebrado.",
+            "evidence_quote_en": "The packaging was damaged, and the product was broken."
+          }
+        ],
+        "sentiment_score": 1,
+        "actionable_for_seller": false,
+        "confidence": 1
+      }
+    },
+    "c9f345723b16bba74d67ccba383f08b2": {
+      "input_sha256": "b87a06dd2fc93629a2c6363048ae85143b89a35e349ff51c02414f4cd45c3649",
+      "result": {
+        "issues": [
+          {
+            "category": "quality_defect",
+            "severity": "low",
+            "evidence_quote": "Produto não corresponde ao da foto pois o que fora enviado é de cor diversa e de qualidade inferior.",
+            "evidence_quote_en": "The product does not correspond to the photo as the one sent is of a different color and inferior quality."
+          }
+        ],
+        "sentiment_score": -1,
+        "actionable_for_seller": false,
+        "confidence": 1
+      }
+    },
+    "38c817cba84547fa9bf0951389a57d97": {
+      "input_sha256": "5b63d85728b7e3d9646dda50d3989e3ad72f2689d578984e71b7e54ca920eb9b",
+      "result": {
+        "issues": [
+          {
+            "category": "wrong_product",
+            "severity": "high",
+            "evidence_quote": "Os cartuchos entregues não são da HP embora é entregue na caixa e aparentemente pareça, mas é um produto falsificado!\r\nSolicitei a troca dos mesmos mas ainda não obtive retorno.",
+            "evidence_quote_en": "The cartridges delivered are not from HP although it seems to be in the box, but it's a counterfeit product!\r\nI requested a replacement for the same but I haven't received a response yet."
+          }
+        ],
+        "sentiment_score": 1,
+        "actionable_for_seller": true,
+        "confidence": 1
+      }
+    },
+    "cc588946716003944b5e99a5660c802a": {
+      "input_sha256": "bfb7e4f070948b6b912a6ad72582ab0d8a17df3544599f38f6d924747716b993",
+      "result": {
+        "issues": [
+          {
+            "category": "missing_item",
+            "severity": "high",
+            "evidence_quote": "Aguardo contato. Faltaram os jogos na cor vermelha e cobre!!",
+            "evidence_quote_en": "Aguardo contato. Faltaram os jogos na cor vermelha e cobre!!"
+          }
+        ],
+        "sentiment_score": 1,
+        "actionable_for_seller": true,
+        "confidence": 1
+      }
+    },
+    "04fcdc70fc4ef992e85666d65c19e853": {
+      "input_sha256": "8814643f4b94352d64f5bd6dd4cbb523e3ae7b2bc88282f1a2202fedaffd7619",
+      "result": {
+        "issues": [
+          {
+            "category": "missing_item",
+            "severity": "high",
+            "evidence_quote": "só veio 3 pulseiras na embalagem..",
+            "evidence_quote_en": "só veio 3 pulseiras na embalagem.."
+          }
+        ],
+        "sentiment_score": 1,
+        "actionable_for_seller": true,
+        "confidence": 1
+      }
+    },
+    "0077bd924a9e436de9b1bce12ef1da89": {
+      "input_sha256": "2fca10ae78688d125d63f691a40b2d5cf529b4b7ab313898ca156bd6fdde39b6",
+      "result": {
+        "issues": [
+          {
+            "category": "seller_communication",
+            "severity": "high",
+            "evidence_quote": "NINGUÉM ME DEU RETORNO. Inclusive enviei um numero de celular mas infelizmente a empresa não retornou.",
+            "evidence_quote_en": "NINGUÉM ME DEU RETORNO. Inclusive enviei um numero de celular mas infelizmente a empresa não retornou."
+          }
+        ],
+        "sentiment_score": 1,
+        "actionable_for_seller": false,
+        "confidence": 1
+      }
+    },
+    "ed3188ebfdc942aca4579497c71309d7": {
+      "input_sha256": "cc05317a5e727c61c38573931a856ca86c81190320b0b7259cd6841bf1d21ad5",
+      "result": {
+        "issues": [
+          {
+            "category": "missing_item",
+            "severity": "high",
+            "evidence_quote": "PRODUTO CHEGOU NA MINHA RESIDÊNCIA TODO QUEBRADO ATÉ AGORA NÃO CONSEGUI EFETUAR A TROCA UMA FALTA DE RESPEITO!",
+            "evidence_quote_en": "PRODUTO CHEGOU NA MINÚNCULA TODO QUEBRADO ATÉ AGORA NÃO CONSEGUI EFETUAR A TROCA UMA FALTA DE RESPEITO!"
+          }
+        ],
+        "sentiment_score": 1,
+        "actionable_for_seller": true,
+        "confidence": 1
+      }
+    },
+    "a894d2c017da1457ae255b3aafeb6103": {
+      "input_sha256": "c88a19d174c5e038f7c0461b3398ca6ded97d2717a757984fbf3466072754539",
+      "result": {
+        "issues": [
+          {
+            "category": "missing_item",
+            "severity": "high",
+            "evidence_quote": "Comprei 2 cartuchos e entregaram apenas 1 deles.\r\nEsta unidade está disponível para ser devolvida.\r\nPreciso do reembolso do valor correspondente",
+            "evidence_quote_en": "Compré 2 cartuchos e entregaram apenas 1 deles. Esta unidade está disponível para ser devolvida. Preciso do reembolso do valor correspondente"
+          }
+        ],
+        "sentiment_score": 1,
+        "actionable_for_seller": true,
+        "confidence": 1
+      }
+    },
+    "26992df80a110294205472f015484670": {
+      "input_sha256": "ebbbfafa274d01a2dbe9d2a90da5e188c9379fabd08368c09c3cbe608868644f",
+      "result": {
+        "issues": [
+          {
+            "category": "missing_item",
+            "severity": "high",
+            "evidence_quote": "comprei dois itens (um jogo de lençol e m matizador) - chegou apenas o jogo de lençol. Não recebi retorno sobre o acontecido.",
+            "evidence_quote_en": "compré dois itens (um jogo de lençol e m matizador) - chegou apenas o jogo de lençol. Não recebi retorno sobre o acontecido."
+          }
+        ],
+        "sentiment_score": 1,
+        "actionable_for_seller": true,
+        "confidence": 1
+      }
+    },
+    "dcf4d914cbfe7ecb98ca430cf59f7022": {
+      "input_sha256": "48989e1b9594957ec04f2ccb7e65792a717cf7bdfddc6ae7fb08a27f1a566681",
+      "result": {
+        "issues": [
+          {
+            "category": "missing_item",
+            "severity": "high",
+            "evidence_quote": "A entrega foi feita no prazo, porem foi entregue somente um moedor de café e nao dois cono feito no pedido, aguardo retorno",
+            "evidence_quote_en": "The delivery was made on time, but only one coffee grinder was delivered, not the two as requested in the order, awaiting a response"
+          }
+        ],
+        "sentiment_score": -0.5,
+        "actionable_for_seller": false,
+        "confidence": 0.9
+      }
+    },
+    "40467f199f04ff0e352479cfd8977d3e": {
+      "input_sha256": "a36bc054dce76dfea892dc3249cde9f5edbd623eadbd1016d266968559684bc9",
+      "result": {
+        "issues": [
+          {
+            "category": "wrong_product",
+            "severity": "high",
+            "evidence_quote": "recebi dentro da embalagem lacrada somente um produto e comprei dois produtos.",
+            "evidence_quote_en": "I received only one product inside the sealed packaging, while I ordered two products."
+          },
+          {
+            "category": "seller_communication",
+            "severity": "high",
+            "evidence_quote": "Liguei para a central e disseram q iriam averiguar minha reclamação. Sempre compro em outros sites e nunca ocorreu isso.",
+            "evidence_quote_en": "I called the central and they said they would investigate my complaint. I always buy from other sites and this has never happened."
+          }
+        ],
+        "sentiment_score": 0.5,
+        "actionable_for_seller": true,
+        "confidence": 0.8
+      }
+    },
+    "cdac7a85b1a935ef70220dc2305651f1": {
+      "input_sha256": "15c393388398060508a65e26e824d39c301fef9c8bf99a1e4692f05b11493f36",
+      "result": {
+        "issues": [
+          {
+            "category": "wrong_product",
+            "severity": "high",
+            "evidence_quote": "Não recebi os produtos e ainda veio um produto veio errado ainda to esperando o retorno de vcs?",
+            "evidence_quote_en": "I did not receive the products and another product came wrong, I am still waiting for your return."
+          }
+        ],
+        "sentiment_score": 0.5,
+        "actionable_for_seller": true,
+        "confidence": 0.7
+      }
+    },
+    "25aa5c6f0dc303863905a0ade6791d6b": {
+      "input_sha256": "2d3b81d635d4ee9dd9760895838ed118ecac111cc5e1481b5f1732e6c266b844",
+      "result": {
+        "issues": [
+          {
+            "category": "missing_item",
+            "severity": "medium",
+            "evidence_quote": "Comprei 2 cartuchos e me entregaram 1, até agora não entraram em contato após reclamação para resolver minha situação",
+            "evidence_quote_en": "I bought 2 cartridges and only received 1, and I have not contacted them after my complaint to resolve my situation."
+          }
+        ],
+        "sentiment_score": 0.5,
+        "actionable_for_seller": false,
+        "confidence": 0.9
+      }
+    },
+    "da147dda37b06f6773350d982e408a15": {
+      "input_sha256": "98edafb8e8b9b19545a2561f25e9018215285c9653b5e397c3505a41c74a50a4",
+      "result": {
+        "issues": [
+          {
+            "category": "delivery_late",
+            "severity": "medium",
+            "evidence_quote": "Entrega está atrasada e descobri que o produto não serve nas minhas portas",
+            "evidence_quote_en": "The delivery is late and I discovered that the product does not fit my doors."
+          }
+        ],
+        "sentiment_score": 0.5,
+        "actionable_for_seller": false,
+        "confidence": 0.9
+      }
+    },
+    "862324f9389340127caee01ac58c2103": {
+      "input_sha256": "ea6367fb9259959fbedf8dec54a216ff76a5cb754a5400c69f10458b209fdd1e",
+      "result": {
+        "issues": [
+          {
+            "category": "seller_communication",
+            "severity": "high",
+            "evidence_quote": "Recebi uma ligação do vendedor falando que o produto estava em falta e que devia cancelar a compra mas não estou conseguindo cancelar",
+            "evidence_quote_en": "I received a call from the seller saying the product was missing and I should cancel the purchase, but I was unable to cancel it"
+          }
+        ],
+        "sentiment_score": 1,
+        "actionable_for_seller": true,
+        "confidence": 1
+      }
+    },
+    "60a228723e615918f45a61d8a5eab90a": {
+      "input_sha256": "a236945989db1aed2adc54d0d967431720463d327c690c6e8cc20d6c689d3169",
+      "result": {
+        "issues": [
+          {
+            "category": "missing_item",
+            "severity": "high",
+            "evidence_quote": "Comprei duas caixas e recebi apenas uma!!!",
+            "evidence_quote_en": "I bought two boxes and received only one!!"
+          }
+        ],
+        "sentiment_score": 1,
+        "actionable_for_seller": false,
+        "confidence": 1
+      }
+    },
+    "fba76d26ed5182660cc2a3c0d4d32330": {
+      "input_sha256": "f62bef9297ee26fc151f38df39668e6f502613c48e2521b608e2c743224ebe60",
+      "result": {
+        "issues": [
+          {
+            "category": "missing_item",
+            "severity": "high",
+            "evidence_quote": "Eu fiz a compra de 3 luminárias pêndulo e só foi entregue apenas uma. Estou aguardando um retorno de quando será entregue os outros dois???!",
+            "evidence_quote_en": "I made a purchase of 3 pendulum lights and only one was delivered. I am waiting for a response on when the other two will be delivered???"
+          }
+        ],
+        "sentiment_score": 1,
+        "actionable_for_seller": false,
+        "confidence": 1
+      }
+    },
+    "8213fbfb5d214625cf7144aad4970868": {
+      "input_sha256": "5d3307776d83f9dec031b098f8e462db403437b95345f1d1808e0662882742b1",
+      "result": {
+        "issues": [
+          {
+            "category": "wrong_product",
+            "severity": "high",
+            "evidence_quote": "Recebi as lentes de contato com o grau errado. Solicitei 1.50 e vieram com 1.75.",
+            "evidence_quote_en": "I received the contact lenses with the wrong diopter. I requested 1.50 and they came with 1.75."
+          }
+        ],
+        "sentiment_score": 1,
+        "actionable_for_seller": true,
+        "confidence": 1
+      }
+    },
+    "81f388a673f2346c96d2fb7c66219462": {
+      "input_sha256": "a2c3b224a75e23b19d0d1ea2839201733546ca0aa348da41cc1958ec165a4635",
+      "result": {
+        "issues": [
+          {
+            "category": "missing_item",
+            "severity": "high",
+            "evidence_quote": "FIZ A COMPRA DE 3 CAIXAS E RECEBI APENAS 2 CAIXAS",
+            "evidence_quote_en": "I ORDERED 3 BOXES AND ONLY RECEIVED 2 BOXES."
+          }
+        ],
+        "sentiment_score": 0.5,
+        "actionable_for_seller": true,
+        "confidence": 0.9
+      }
+    },
+    "2c684f61a036b0a9baa879bee033ca63": {
+      "input_sha256": "3eea33ac616932fa71d3aa5d2756e4fa15d1c423e6d217fa8d27e7fbe11707c0",
+      "result": {
+        "issues": [
+          {
+            "category": "missing_item",
+            "severity": "high",
+            "evidence_quote": "COMPREI DUAS UNIDADES DO PRODUTO E APENAS UMA UNIDADE CHEGOU EM MINHA RESIDÊNCIA. QUERO SABER O QUE ACONTECEU POIS ENTRO EM CONTATO COM A EMPRESA SEM RETORNO",
+            "evidence_quote_en": "I bought two units of the product, but only one unit arrived at my residence. I want to know what happened, as I contacted the company without a response."
+          }
+        ],
+        "sentiment_score": -0.5,
+        "actionable_for_seller": true,
+        "confidence": 0.9
+      }
+    },
+    "57c84f84b75390161d753fe35299224c": {
+      "input_sha256": "ad1d4040bd13e18ebce900a0149f021c24e85e0182ec600a2299ab692b740cc3",
+      "result": {
+        "issues": [
+          {
+            "category": "missing_item",
+            "severity": "high",
+            "evidence_quote": "O produto acabou de chegar. Contudo só veio 01 unidade e eu comprei 03 unidades.",
+            "evidence_quote_en": "The product arrived, but only one unit was received. I bought three units."
+          }
+        ],
+        "sentiment_score": 0.5,
+        "actionable_for_seller": true,
+        "confidence": 0.9
+      }
+    },
+    "c54fde603b36649a51d1a27dc8280614": {
+      "input_sha256": "5150c1a7f0a8d03eb0147de03c8748170eb8b551c039275f942d9e75a783ab50",
+      "result": {
+        "issues": [
+          {
+            "category": "quality_defect",
+            "severity": "medium",
+            "evidence_quote": "Achei o produto mal acondicionado na embalagem. Chegou todo deformado.. bem diferente da foto do site. Mal Acabamento",
+            "evidence_quote_en": "I found the product poorly packed in the packaging. It arrived deformed. Very different from the site photo. Poor finish."
+          }
+        ],
+        "sentiment_score": 0.3,
+        "actionable_for_seller": false,
+        "confidence": 0.9
+      }
+    },
+    "b4b327ece190bdfda98e3a3e3417e597": {
+      "input_sha256": "79069d675af91cde99af4dced69e0a3ea2df549188eba650b1913ae0348e4584",
+      "result": {
+        "issues": [
+          {
+            "category": "missing_item",
+            "severity": "high",
+            "evidence_quote": "Comprei 02 canetas e recebi somente 01, e a NF foi emitida e paga constando duas canetas e ainda aguardando retorno do que ocorreu.",
+            "evidence_quote_en": "I bought two pens and received only one. The invoice was issued and paid for two pens, and I am still awaiting a response about what happened."
+          }
+        ],
+        "sentiment_score": 0.5,
+        "actionable_for_seller": true,
+        "confidence": 0.9
+      }
+    },
+    "07727dcfebd3c66724a083a5921b6e7f": {
+      "input_sha256": "bfbf04a9d2d9b1066e2be4b57e204e0ab642c4a0823cefd0d2cc340631f423e8",
+      "result": {
+        "issues": [
+          {
+            "category": "missing_item",
+            "severity": "high",
+            "evidence_quote": "Acredito que se os produtos vem do mesmo local e a compra foi feita junta, a entrega também será realizada junta",
+            "evidence_quote_en": "I believe that if the products come from the same place and the purchase was made together, the delivery will also be made together"
+          }
+        ],
+        "sentiment_score": 0.6,
+        "actionable_for_seller": false,
+        "confidence": 0.8
+      }
+    },
+    "5b89f8685fa4514218d6088dccbb8415": {
+      "input_sha256": "f5271caa2effdb5f06d3f637ffdf7985a614373e2e401e73a3aa450f59576f1a",
+      "result": {
+        "issues": [
+          {
+            "category": "missing_item",
+            "severity": "high",
+            "evidence_quote": "Comprei 2 embalagens de um produto e foi entregue apenas 01",
+            "evidence_quote_en": "I bought 2 packages of a product and only 1 was delivered."
+          }
+        ],
+        "sentiment_score": -0.7,
+        "actionable_for_seller": false,
+        "confidence": 0.9
+      }
+    },
+    "7502094ae84c21031642c25e78d72599": {
+      "input_sha256": "d200ebab692fc94ca0eabb4c516400e929326532fd764b93c8c8b32a992d6023",
+      "result": {
+        "issues": [
+          {
+            "category": "quality_defect",
+            "severity": "high",
+            "evidence_quote": "produto diferente da foto anunciada e entrega feita de maneira ridícula, sem proteção o produto ficava solto dentro da caixa. Parece que nem trabalham no ramo kkkk amadores.",
+            "evidence_quote_en": "product different from the advertised photo and delivery done in a ridiculous way, without protection the product was loose inside the box. It seems like they don't even work in this business kkkk amateurs."
+          }
+        ],
+        "sentiment_score": 1,
+        "actionable_for_seller": false,
+        "confidence": 1
+      }
+    },
+    "aa5251caad4b4b700bb23a28d4b22357": {
+      "input_sha256": "8f5a95d48caae8fecd642168471bc465783e4720bc32d8f737f3d7862994a6fc",
+      "result": {
+        "issues": [
+          {
+            "category": "quality_defect",
+            "severity": "high",
+            "evidence_quote": "O produto veio avariado.",
+            "evidence_quote_en": "The product arrived damaged."
+          }
+        ],
+        "sentiment_score": 0.5,
+        "actionable_for_seller": true,
+        "confidence": 0.9
+      }
+    },
+    "ae32b954924a1f7f0228846421a12544": {
+      "input_sha256": "55de6e4b2b0fa6ced737615d4834b43d53d0d808191235f9a136c473f0dec22c",
+      "result": {
+        "issues": [
+          {
+            "category": "quality_defect",
+            "severity": "high",
+            "evidence_quote": "Ainda aguardo contato do site para fazer a troca do meu produto",
+            "evidence_quote_en": "I am still awaiting the site's contact to make a product exchange."
+          }
+        ],
+        "sentiment_score": 0.5,
+        "actionable_for_seller": true,
+        "confidence": 0.9
+      }
+    },
+    "27c9ec0a5cb8ef59c48b2f042d31ce2e": {
+      "input_sha256": "501e3bc54e4bce887751712d2186a57aa40369d7b4b1bd5e50f9d7c46f8be545",
+      "result": {
+        "issues": [
+          {
+            "category": "quality_defect",
+            "severity": "high",
+            "evidence_quote": "o produto veio errado (o encosto não corresponde à foto - é menor) e com defeito: um dos ferros que compõe as pernas está torto, o que faz com que a cadeira fique instável e bamba",
+            "evidence_quote_en": "The product came wrong (the backrest does not correspond to the photo - it is smaller) and with defects: one of the rods that compose the legs is twisted, which makes the chair unstable and wobbly"
+          }
+        ],
+        "sentiment_score": 1,
+        "actionable_for_seller": true,
+        "confidence": 1
+      }
+    },
+    "4b037b608183a7497dfefc055c650f85": {
+      "input_sha256": "0e58304376202e9c4c2295b55907b19c9aea2b21a5922a6ec38e1501e69cbfc7",
+      "result": {
+        "issues": [
+          {
+            "category": "missing_item",
+            "severity": "high",
+            "evidence_quote": "Comprei a caixa de simparic com 3 comprimidos e entregaram a caixa com apenas 1 comprimido",
+            "evidence_quote_en": "I bought a box of simparic with 3 pills and they delivered a box with only 1 pill"
+          }
+        ],
+        "sentiment_score": 1,
+        "actionable_for_seller": true,
+        "confidence": 1
+      }
+    },
+    "bdc093c67f789f79796d70955bc44113": {
+      "input_sha256": "79bffdf8698138922886f427a964bfab8dda8201aa58122aa33df6d2c59976cd",
+      "result": {
+        "issues": [
+          {
+            "category": "wrong_product",
+            "severity": "medium",
+            "evidence_quote": "Apesar do produto ter qualidade, meu pedido veio ERRADO. Pedi um cobre leito SUPER KING e recebi o tamanho KING",
+            "evidence_quote_en": "Despite the quality of the product, my order came wrong. I requested a SUPER KING bed frame and received a KING size"
+          }
+        ],
+        "sentiment_score": 1,
+        "actionable_for_seller": true,
+        "confidence": 1
+      }
+    },
+    "47f9abdf9bff2e35b757a67e46569ddb": {
+      "input_sha256": "d45a4a4a6023c5d39b3d6c1e7c2623e59dbdefe19dc292584d2dac5c9a78bf04",
+      "result": {
+        "issues": [
+          {
+            "category": "missing_item",
+            "severity": "high",
+            "evidence_quote": "Recebi somente o Toner da cor Ciano\r\n- Toner HP 311A CE311A Cyan Original Serie 126a\r\n\r\nO amarelo não recebi",
+            "evidence_quote_en": "I received only the Cyan toner\r\n- Toner HP 311A CE311A Cyan Original Serie 126a\r\n\r\nThe yellow one did not arrive"
+          }
+        ],
+        "sentiment_score": 1,
+        "actionable_for_seller": true,
+        "confidence": 1
+      }
+    },
+    "c96ab1f0398a05ae5f2fb37592825a2e": {
+      "input_sha256": "cbf3febd89b53720fbf8c0c7aac1179fd511f8bfe5fd3546d2f342cc12281377",
+      "result": {
+        "issues": [
+          {
+            "category": "missing_item",
+            "severity": "high",
+            "evidence_quote": "Comprei dois kits de almofadas e só foi entregue apenas um kit de almofada, está faltando o outro kit e niguem me respondeu até agora se vão me entregar o outro kit",
+            "evidence_quote_en": "I bought two cushion kits and only one cushion kit was delivered, one of the other kit is missing and nobody has replied to me yet if they will deliver the other kit."
+          }
+        ],
+        "sentiment_score": 1,
+        "actionable_for_seller": true,
+        "confidence": 1
+      }
+    },
+    "c7c623cd643523c4f570e2358dec9e61": {
+      "input_sha256": "34fb0b39193bd16cb99538574227134e9058a11a0532f96a308d32b35033466b",
+      "result": {
+        "issues": [
+          {
+            "category": "missing_item",
+            "severity": "high",
+            "evidence_quote": "Comprei dois produtos da mesma loja porem recebia apenas não recebi nenhum retorno da loja ate agora",
+            "evidence_quote_en": "I bought two products from the same store but only received one and have not received any return from the store yet."
+          }
+        ],
+        "sentiment_score": 1,
+        "actionable_for_seller": true,
+        "confidence": 1
+      }
+    },
+    "b87c288e1cf59201fee2aa895f153784": {
+      "input_sha256": "887a6993a2408357cff4c8ed9bfc36ce35e4206fb2707e4c75098cf398fabc7e",
+      "result": {
+        "issues": [
+          {
+            "category": "missing_item",
+            "severity": "high",
+            "evidence_quote": "Foi recebido apenas a pulseira de aço !\r\nO kit com as duas pulseiras não veio o correio informou q só veio uma caixa com uma pulseira !",
+            "evidence_quote_en": "Foi recebido apenas a pulseira de aço !\r\nO kit com as duas pulseiras não veio o correio informou q só veio uma caixa com uma pulseira !"
+          }
+        ],
+        "sentiment_score": -0.5,
+        "actionable_for_seller": false,
+        "confidence": 0.9
+      }
+    },
+    "1499de0b00d2fde6dd0cbebf49833e89": {
+      "input_sha256": "8c532789eda042588c261865120b0491855a4106ba714ca25410c039967c294c",
+      "result": {
+        "issues": [
+          {
+            "category": "wrong_product",
+            "severity": "high",
+            "evidence_quote": "Recebi o produto mais veio errado, ainda não recebi nenhum contato da empresa!",
+            "evidence_quote_en": "Recebi o produto mais veio errado, ainda não recebi nenhum contato da empresa!"
+          }
+        ],
+        "sentiment_score": -0.5,
+        "actionable_for_seller": false,
+        "confidence": 0.9
+      }
+    },
+    "e5c9019e65db63ec852914a474b9af51": {
+      "input_sha256": "22f43021d4c5a83f0171114e37d26a98e165388d1f222514818b89059ed3f660",
+      "result": {
+        "issues": [
+          {
+            "category": "seller_communication",
+            "severity": "high",
+            "evidence_quote": "No correio disseram que não é problema com eles e sim c/a loja. Mandei mensagem e não responderam ainda.",
+            "evidence_quote_en": "The courier said it's not a problem with them, but with the store. I sent a message and they didn't respond yet."
+          }
+        ],
+        "sentiment_score": 1,
+        "actionable_for_seller": false,
+        "confidence": 1
+      }
+    },
+    "99edbe9a64f23d27c9d104f39676b36b": {
+      "input_sha256": "915e1e370f099d525a92167e13db7818a1a63faac0a782ff2470599b86c4b116",
+      "result": {
+        "issues": [
+          {
+            "category": "quality_defect",
+            "severity": "high",
+            "evidence_quote": "RECEBI O PRODUTO TODO QUEBRADO EM CACOS MESMO,UMA FALTA DE RESPEITO MUITO GRANDE ATÉ AGORA NÃO CONSEGUI EFETUAR A TROCA.",
+            "evidence_quote_en": "I received the product completely broken, a huge lack of respect, I still can't do the exchange until now."
+          }
+        ],
+        "sentiment_score": 1,
+        "actionable_for_seller": true,
+        "confidence": 1
+      }
+    },
+    "e781a0e40c96ff7df9ae343a8d38641d": {
+      "input_sha256": "f236583590d1295fdf6fe661223c650837b2e623e3b3dbf9e9f6518010be1bc3",
+      "result": {
+        "issues": [
+          {
+            "category": "missing_item",
+            "severity": "medium",
+            "evidence_quote": "Comprei dois filtros e a embalagem chegou com apenas um filtro... E o outro?",
+            "evidence_quote_en": "I bought two filters and the packaging arrived with only one filter... And the other one?"
+          }
+        ],
+        "sentiment_score": 0.5,
+        "actionable_for_seller": true,
+        "confidence": 0.9
+      }
+    },
+    "a7f1e7d8ba475cecdc9d4b7c73187313": {
+      "input_sha256": "0aa127e07294878ced7aad5657404c70d18361d0930bc759dd635d2d1fb3c81b",
+      "result": {
+        "issues": [
+          {
+            "category": "missing_item",
+            "severity": "high",
+            "evidence_quote": "Comprei 3 produtos, e recebi apenas 1, estou aguardando um retorno ref. aos demais produtos comprados.",
+            "evidence_quote_en": "I bought 3 products, and received only 1, I am awaiting a refund for the other products purchased."
+          }
+        ],
+        "sentiment_score": 0.5,
+        "actionable_for_seller": true,
+        "confidence": 0.9
+      }
+    },
+    "ed183d4193950b735b8aeca2d95f81be": {
+      "input_sha256": "2ce29c3e65cdf69d3462fdb7a121d17fc93a7d20a66d657c7647487a086e060f",
+      "result": {
+        "issues": [
+          {
+            "category": "delivery_late",
+            "severity": "high",
+            "evidence_quote": "Comprei dois produtos e recebi apenas 1 deles. Tentei entrar em contato com a loja e não obtive sucesso.",
+            "evidence_quote_en": "I bought two products and only received one of them. I tried to contact the store and did not succeed."
+          },
+          {
+            "category": "seller_communication",
+            "severity": "high",
+            "evidence_quote": "Tentei entrar em contato com a loja e não obtive sucesso. Tentei entrar em contato com a lannister por telefone e email e também não consegui.",
+            "evidence_quote_en": "I tried to contact the store and did not succeed. I tried to contact Lannister by phone and email and also did not succeed."
+          }
+        ],
+        "sentiment_score": 0.5,
+        "actionable_for_seller": true,
+        "confidence": 1
+      }
+    },
+    "f5906e4b6d89ffacb647da57b0ad0a3d": {
+      "input_sha256": "6cd937f8047a764fc3cb42d4b03718acfbd612486dfffdc109e911e426402a2f",
+      "result": {
+        "issues": [
+          {
+            "category": "delivery_late",
+            "severity": "high",
+            "evidence_quote": "Minha compra ainda não chegou, não respeitam o prazo de entrega, não me atendem não me respondem. Total falta de respeito.",
+            "evidence_quote_en": "My purchase has not arrived, they do not respect the delivery deadline, they do not respond to me. Total lack of respect."
+          }
+        ],
+        "sentiment_score": 0.5,
+        "actionable_for_seller": false,
+        "confidence": 1
+      }
+    },
+    "a872165a8be38e1a48615d0b38cd4a34": {
+      "input_sha256": "67b269f1beb7e110e393a5a37207bc0cfc0642c59809e3b3d322f9ce9148ead5",
+      "result": {
+        "issues": [
+          {
+            "category": "quality_defect",
+            "severity": "medium",
+            "evidence_quote": "Recebi o produto quebrado e sem funcionar. Tentei contato com a empresa, mas não conseguiram localizar meu pedido.",
+            "evidence_quote_en": "I received the broken product and non-functional. I tried to contact the company, but they could not locate my order."
+          }
+        ],
+        "sentiment_score": 0.5,
+        "actionable_for_seller": false,
+        "confidence": 1
+      }
+    },
+    "b609377fec42b3ecc646a9bbd3d41658": {
+      "input_sha256": "8c7d4fd99e469c0d992610bb095772333dbcca582c1c104af843d49e42a3c231",
+      "result": {
+        "issues": [],
+        "sentiment_score": 0.5,
+        "actionable_for_seller": false,
+        "confidence": 0.9
+      }
+    },
+    "7ff3e4a8c40216cdc78be392af8550f7": {
+      "input_sha256": "ed8c0a1475df3134fe52fbb33706ee23e4fc7b5e50586ce5bf6ea5b4ad6a6369",
+      "result": {
+        "issues": [
+          {
+            "category": "wrong_product",
+            "severity": "high",
+            "evidence_quote": "Meu produto veio errado. Outra estamos. Fiz contato no dia do recebimento dia 24 para devolução e até agora nda...estou aguardando ainda...",
+            "evidence_quote_en": "My product came wrong. Another one was sent. I contacted the delivery on the day of receipt on the 24th for return, but I'm still waiting... "
+          }
+        ],
+        "sentiment_score": 0.5,
+        "actionable_for_seller": false,
+        "confidence": 0.9
+      }
+    },
+    "43e964b1086d9857a9628a12068e3c85": {
+      "input_sha256": "baea73847fba99f054186c61646d55b7aa51d604fa85ae76d0a54dbc48ae44af",
+      "result": {
+        "issues": [
+          {
+            "category": "wrong_product",
+            "severity": "high",
+            "evidence_quote": "Comprei 2 produtos e recebi 1 caixa com a nota fiscal dos 2 produtos, porém com apenas 1 produto, o mais barato. Mandei email para a loja responsável, mas não obtive resposta...",
+            "evidence_quote_en": "I bought 2 products and received 1 box with the fiscal invoice for the 2 products, but with only 1 product, the cheapest one. I sent an email to the responsible store, but I didn't get a response... "
+          }
+        ],
+        "sentiment_score": 0.5,
+        "actionable_for_seller": false,
+        "confidence": 0.9
+      }
+    },
+    "527350c6701a599046a2e687a76b7a61": {
+      "input_sha256": "e0223d44381ee4f21adec2ba76fdc9035e47c303bf05e1135108771cae6d0e02",
+      "result": {
+        "issues": [
+          {
+            "category": "delivery_late",
+            "severity": "high",
+            "evidence_quote": "Decorridos 10 dias do prazo máximo para entrega, dia 17/04/18, não houve qualquer contato para justificar a falta.",
+            "evidence_quote_en": "After 10 days of the maximum delivery period, April 17, 2018, there was no contact to justify the delay."
+          }
+        ],
+        "sentiment_score": 1,
+        "actionable_for_seller": false,
+        "confidence": 1
+      }
+    },
+    "aca73a211e54eb67096833db1f7052ca": {
+      "input_sha256": "5d33b91605dc71a980f171b488ba8281b36855b8fec7ee6ef5987bf3d5690c98",
+      "result": {
+        "issues": [
+          {
+            "category": "missing_item",
+            "severity": "high",
+            "evidence_quote": "Boa tarde , não recebi os dois cesto conforme a NF. Recebi somente um , e paguei por dois ",
+            "evidence_quote_en": "Boa tarde , I did not receive the two baskets as stated on the invoice. I only received one and paid for two."
+          }
+        ],
+        "sentiment_score": 0.5,
+        "actionable_for_seller": true,
+        "confidence": 0.9
+      }
+    },
+    "1ff334d1aff955b96331e55dc83e31ae": {
+      "input_sha256": "76651c5cd32195f17dcc897a0ee3eb188507336d82abbf4714597182519cac28",
+      "result": {
+        "issues": [
+          {
+            "category": "seller_communication",
+            "severity": "high",
+            "evidence_quote": "Já entrei em contato varias vezes e não me dão retorno. Fiz o pedido dia 24-01-18 e até hoje, dia 09-03-18, não recebi minha encomenda. Uma verdadeira falta de respeito.",
+            "evidence_quote_en": "I contacted them multiple times but they didn't respond. I placed the order on 24-01-18 and still haven't received my package today, March 9th. This is a true lack of respect."
+          }
+        ],
+        "sentiment_score": 0.5,
+        "actionable_for_seller": true,
+        "confidence": 0.9
+      }
+    },
+    "5fa697d9d63910a0c0c41de7facf057a": {
+      "input_sha256": "1890212fcde1c5d73013c14591355809486dcc4ac0cf5e33debd3d920635e3bd",
+      "result": {
+        "issues": [
+          {
+            "category": "missing_item",
+            "severity": "high",
+            "evidence_quote": "comprei 3 produtos e vieram apenas 2. estou tentando entrar em contato a dias e não consigo. quando sera entregue o outro produto?",
+            "evidence_quote_en": "I bought 3 products and only received 2. I've been trying to contact them for days and can't get the other product delivered."
+          }
+        ],
+        "sentiment_score": -0.5,
+        "actionable_for_seller": false,
+        "confidence": 0.9
+      }
+    },
+    "8a991a6202469bb03667112dd4ecf425": {
+      "input_sha256": "698a573ac354d3e622e121d5d7122de6ca7a5b07b7ae14636eeda9f624e3b6cb",
+      "result": {
+        "issues": [
+          {
+            "category": "missing_item",
+            "severity": "high",
+            "evidence_quote": "Comprei 2 unidades, recebi apenas 1. Gostaria que entrassem em contato comigo.",
+            "evidence_quote_en": "I bought 2 units, received only 1. I would like them to contact me."
+          },
+          {
+            "category": "seller_communication",
+            "severity": "high",
+            "evidence_quote": "Comprei 2 unidades, recebi apenas 1. Gostaria que entrassem em contato comigo.",
+            "evidence_quote_en": "I bought 2 units, received only 1. I would like them to contact me."
+          }
+        ],
+        "sentiment_score": 0.5,
+        "actionable_for_seller": true,
+        "confidence": 1
+      }
+    },
+    "ecf05388b2201007af96097c09e68c6d": {
+      "input_sha256": "05309b0d8bea2e984ea4273dcd176256f8bdee17caff46da4449c50004f3e674",
+      "result": {
+        "issues": [
+          {
+            "category": "quality_defect",
+            "severity": "high",
+            "evidence_quote": "recebi o produto quebrado e aguardo retorno da lannister",
+            "evidence_quote_en": "I received the broken product and await the response from Lannister"
+          }
+        ],
+        "sentiment_score": 1,
+        "actionable_for_seller": true,
+        "confidence": 1
+      }
+    },
+    "c3e3262d732c0a6b4c3d01f4538a95bf": {
+      "input_sha256": "17bdd5b38473bbea1fa5f1edebe3e6cc390fdd15d920385fa499d6e824ed5374",
+      "result": {
+        "issues": [
+          {
+            "category": "missing_item",
+            "severity": "high",
+            "evidence_quote": "Não recebi a quantidade correta, estou aguardando posição da targaryen, mas até agora não me deram retorno",
+            "evidence_quote_en": "I did not receive the correct quantity, I am awaiting the position of targaryen, but so far they have not responded to me"
+          }
+        ],
+        "sentiment_score": 1,
+        "actionable_for_seller": true,
+        "confidence": 1
+      }
+    },
+    "0cbc9687d5e2ba8faa9884a7f9bce407": {
+      "input_sha256": "921acd40ad949ff6668925e9254897ba633159f829732e19eac1f552cce78de8",
+      "result": {
+        "issues": [
+          {
+            "category": "seller_communication",
+            "severity": "high",
+            "evidence_quote": "aguardo contato",
+            "evidence_quote_en": "I await contact"
+          }
+        ],
+        "sentiment_score": 0.5,
+        "actionable_for_seller": true,
+        "confidence": 0.9
+      }
+    },
+    "f85b396f89cd989986f91a34ebc52248": {
+      "input_sha256": "cb8ffbf3da8fc3c02fa1e9f5f922cb5972c25d148b63f7ccb59dd67dc90b6da9",
+      "result": {
+        "issues": [
+          {
+            "category": "wrong_product",
+            "severity": "high",
+            "evidence_quote": "O PRODUTO QUE PEDI NÃO CORRRESPONDE AO QUE FOI ENTREGUE, TOTALMENTE DIFERENTE.",
+            "evidence_quote_en": "The product I requested does not correspond to what was delivered, totally different."
+          }
+        ],
+        "sentiment_score": 0.5,
+        "actionable_for_seller": true,
+        "confidence": 0.9
+      }
+    },
+    "d314664021ae76ad5cd79e7924b9f46c": {
+      "input_sha256": "cdbc2728d6610c29507a45339f83e3df260fb968f0ca0086f4c2712f751c1985",
+      "result": {
+        "issues": [
+          {
+            "category": "missing_item",
+            "severity": "high",
+            "evidence_quote": "Comprei 4 itens, porém, chegou somente 1, o pior é que com a nota fiscal dos 4 que eu havia comprado como se naquela embalagem estivesse todos itens.",
+            "evidence_quote_en": "I bought 4 items, but only received 1, the worst is that with the fiscal note of the 4 items that I had purchased, it seemed that all items were in the package."
+          }
+        ],
+        "sentiment_score": 0.5,
+        "actionable_for_seller": false,
+        "confidence": 0.9
+      }
+    },
+    "6f97d8b5afaf78f8658cfc0634840b40": {
+      "input_sha256": "59044d849aec262a03f6304e090a86947a3731ca07e0279ecc48aeb36e139c86",
+      "result": {
+        "issues": [
+          {
+            "category": "wrong_product",
+            "severity": "high",
+            "evidence_quote": "produto entregue diferente do que foi comprado",
+            "evidence_quote_en": "product delivered different from what was purchased"
+          }
+        ],
+        "sentiment_score": -0.7,
+        "actionable_for_seller": true,
+        "confidence": 0.9
+      }
+    },
+    "989d6baa4f2f2dc2c03dda1daef5a6e1": {
+      "input_sha256": "d9075cc543eb08902a07907d1ed3c72da0ebfb178b2e78fdb62d8995e28948d0",
+      "result": {
+        "issues": [
+          {
+            "category": "wrong_product",
+            "severity": "high",
+            "evidence_quote": "Pessimo vendedor, foi entregue parte do Pedido, e os que vieram são errados, comprei 60XL color veio 60XL Preto",
+            "evidence_quote_en": "Bad seller, part of the order was delivered, and what came was wrong, I bought 60XL color and came 60XL black"
+          }
+        ],
+        "sentiment_score": -0.8,
+        "actionable_for_seller": true,
+        "confidence": 0.9
+      }
+    },
+    "6cd550417b0d2d01329b5cc4233da170": {
+      "input_sha256": "dc14804ade53cac36c63d2f00b4cbbecd6fe733db27f7ee25cabe17e5438a126",
+      "result": {
+        "issues": [
+          {
+            "category": "missing_item",
+            "severity": "high",
+            "evidence_quote": "Mas qual foi minha surpresa ao receber a caixa.Havia apenas uma unidade e a nota em anexo constavam as 3 .",
+            "evidence_quote_en": "But my surprise was when I received the box. There was only one unit and the note attached stated 3."
+          }
+        ],
+        "sentiment_score": 1,
+        "actionable_for_seller": true,
+        "confidence": 1
+      }
+    },
+    "f0487d938be5206fd01883789f9d0b42": {
+      "input_sha256": "a6686ddd8019076b03dbe1e778cc8a9c0e867fb99824e6f3c18728bcb2aaa6f5",
+      "result": {
+        "issues": [
+          {
+            "category": "missing_item",
+            "severity": "high",
+            "evidence_quote": "RECEBI APENAS A METADE DOS PRODUTOS, ESTOUNO AGUARDO DO RETORNO ATÉ AGORA!",
+            "evidence_quote_en": "I RECEIVED ONLY HALF OF THE PRODUCTS, I AM STILL WAITING FOR THE RETURN UNTIL NOW!"
+          }
+        ],
+        "sentiment_score": 1,
+        "actionable_for_seller": true,
+        "confidence": 1
+      }
+    },
+    "931b41785018b0d382b7a099b89e3845": {
+      "input_sha256": "4e445abbd6a29fd1b1f3432a8fc02911bca853018fcf3df10cd88f9629b2a72d",
+      "result": {
+        "issues": [
+          {
+            "category": "missing_item",
+            "severity": "high",
+            "evidence_quote": "na embalagem veio apenas um.",
+            "evidence_quote_en": "na embalagem veio apenas um."
+          }
+        ],
+        "sentiment_score": 1,
+        "actionable_for_seller": true,
+        "confidence": 1
+      }
+    },
+    "3464178c3faed85089af71d503825d91": {
+      "input_sha256": "4e8729102799172bf621d45c36aae2e75e3fb8883a9b4a5d2d981e5cdceed7fa",
+      "result": {
+        "issues": [
+          {
+            "category": "wrong_product",
+            "severity": "high",
+            "evidence_quote": "a descrição do produto não corresponde com o modelo recebido",
+            "evidence_quote_en": "a descrição do produto não corresponde com o modelo recebido"
+          }
+        ],
+        "sentiment_score": 1,
+        "actionable_for_seller": true,
+        "confidence": 1
+      }
+    },
+    "1d42266e082692d6b15caf12e532c017": {
+      "input_sha256": "605e3f07dcbed732190e7e4fd51844c92a1efcf2c8d1c5c84c6fdc4bec3da6be",
+      "result": {
+        "issues": [
+          {
+            "category": "missing_item",
+            "severity": "high",
+            "evidence_quote": "São 2 produtos. Recebi apenas 1. Faltou as velas de filtro de água. Preciso receber o quanto antes ou a devolução do valor. Aguardo retorno. Muito obrigado.",
+            "evidence_quote_en": "There are 2 products. I received only 1. The air filter oil wicks are missing. I need to receive it as soon as possible or the refund of the value. I await the response. Thank you very much."
+          }
+        ],
+        "sentiment_score": 0.5,
+        "actionable_for_seller": true,
+        "confidence": 1
+      }
+    },
+    "26b3d681967162a2d1672d5f977917bc": {
+      "input_sha256": "def35c987f1959654e4038605ed408635203bea2fc88818b460822a3a1c5446d",
+      "result": {
+        "issues": [
+          {
+            "category": "missing_item",
+            "severity": "high",
+            "evidence_quote": "Comprei 2 redes e recebi apenas 1, aguardo solução.",
+            "evidence_quote_en": "Comprei 2 redes and received only 1, awaiting solution."
+          }
+        ],
+        "sentiment_score": 1,
+        "actionable_for_seller": true,
+        "confidence": 1
+      }
+    },
+    "47eedc7decefbfea3a4ecd78fadec39f": {
+      "input_sha256": "9ef2a8418ae8e2947c65538967448b22d7e1c71ca4d4dcada5a546732f5955d3",
+      "result": {
+        "issues": [
+          {
+            "category": "quality_defect",
+            "severity": "medium",
+            "evidence_quote": "Recebi o produto sem funcionalidade e solicitei a devolução.",
+            "evidence_quote_en": "Received the product without functionality and requested a refund."
+          }
+        ],
+        "sentiment_score": 1,
+        "actionable_for_seller": true,
+        "confidence": 1
+      }
+    },
+    "ea53de1722fff5127f7a879e308b1b01": {
+      "input_sha256": "2e572a65e02ad7a5929a43ebd34117e74f7b3fad2956283ca12c3c158c9fb1bc",
+      "result": {
+        "issues": [
+          {
+            "category": "quality_defect",
+            "severity": "high",
+            "evidence_quote": "O produto chegou com a voltagem errada e quebrado",
+            "evidence_quote_en": "The product arrived with the wrong voltage and broken"
+          }
+        ],
+        "sentiment_score": 1,
+        "actionable_for_seller": false,
+        "confidence": 1
+      }
+    },
+    "794e69769f91e51b752028ee5cbcb234": {
+      "input_sha256": "8a713e565ebeff5838287b1ef4705294641006de257d28b1b49e150f231a1532",
+      "result": {
+        "issues": [
+          {
+            "category": "quality_defect",
+            "severity": "high",
+            "evidence_quote": "Recebi meu produto, porém com defeito, ele não funciona",
+            "evidence_quote_en": "I received my product, but it has a defect, it does not work"
+          },
+          {
+            "category": "other",
+            "severity": "high",
+            "evidence_quote": "aguardo um contato para resolver meu problema",
+            "evidence_quote_en": "I await a contact to resolve my problem"
+          }
+        ],
+        "sentiment_score": 1,
+        "actionable_for_seller": true,
+        "confidence": 1
+      }
+    },
+    "2c1a327bf7a03b573a16ea2ad1bebe41": {
+      "input_sha256": "48f42a0a6eed1537cf7e631ddc81c54913dd1afba6646583c203f17accc79da5",
+      "result": {
+        "issues": [
+          {
+            "category": "missing_item",
+            "severity": "high",
+            "evidence_quote": "Pessimo! Comprei 3 rolos de papel de parede de um mesmo modelo, só chegou 1 na caixa",
+            "evidence_quote_en": "Bad! I bought 3 rolls of wallpaper of the same model, only 1 arrived in the box"
+          },
+          {
+            "category": "quality_defect",
+            "severity": "high",
+            "evidence_quote": "sem Nota Fiscal e a embalagem do papel está com o lacre violado e sem etiqueta de identificação do produto",
+            "evidence_quote_en": "without a tax receipt and the paper packaging has a broken seal and without a product identification label"
+          }
+        ],
+        "sentiment_score": 1,
+        "actionable_for_seller": false,
+        "confidence": 1
+      }
+    },
+    "7b4ec7faed0eef31b5d6504762c25b34": {
+      "input_sha256": "77b6b06fdb76236a8d380e281a71121080f9bc3d237096c575744874a9e6e2ae",
+      "result": {
+        "issues": [
+          {
+            "category": "missing_item",
+            "severity": "high",
+            "evidence_quote": "O pedido foi entregue incompleto, apesar da NF informar a quantidade de 2 embalagens de Noseclean, dentro da caixa havia apenas 1.",
+            "evidence_quote_en": "The order was delivered incomplete, despite the NF informing the quantity of 2 Noseclean packages, inside the box there was only 1 package."
+          }
+        ],
+        "sentiment_score": 1,
+        "actionable_for_seller": true,
+        "confidence": 1
+      }
+    },
+    "f763c3dcc631ccfc8c6c9a61916ae351": {
+      "input_sha256": "33c543c842c32d8567f5b114afdb5c48b8f1d9d452218e18545570b925bb225f",
+      "result": {
+        "issues": [
+          {
+            "category": "missing_item",
+            "severity": "high",
+            "evidence_quote": "Não recebi as 6 caixas. Apenas 4. Estão faltando 2 caixas de lápis de cor.",
+            "evidence_quote_en": "I did not receive the 6 boxes. Only 4. There are 2 boxes of colored pencils missing."
+          }
+        ],
+        "sentiment_score": 1,
+        "actionable_for_seller": true,
+        "confidence": 1
+      }
+    },
+    "21d50742c96c5cc3de645697c7e5d611": {
+      "input_sha256": "ec584470c90c4e6792e144895672bb87c601fb11d4d5dd67e87ada282958c4fb",
+      "result": {
+        "issues": [
+          {
+            "category": "missing_item",
+            "severity": "high",
+            "evidence_quote": "O produto chegou sem a embalagem do fabricante, apenas embrulhado em plástico bolha e sem a nota fiscal.",
+            "evidence_quote_en": "The product arrived without the manufacturer's packaging, only wrapped in bubble wrap and without the invoice."
+          }
+        ],
+        "sentiment_score": 1,
+        "actionable_for_seller": true,
+        "confidence": 1
+      }
+    },
+    "e209791624da0e88e91ad1707ead0f2c": {
+      "input_sha256": "813df2dd67789b579118fb7a8431573e11692fd5ebe4e22ea7f2a20e2de45618",
+      "result": {
+        "issues": [
+          {
+            "category": "wrong_product",
+            "severity": "medium",
+            "evidence_quote": "Produto foi entregue com defeito com a pulseira cortada .... mas não consigo contato adequado, não tenho retorno",
+            "evidence_quote_en": "The product was delivered with a defect, the bracelet was cut... but I cannot reach the appropriate contact, I have no return."
+          }
+        ],
+        "sentiment_score": 1,
+        "actionable_for_seller": true,
+        "confidence": 1
+      }
+    },
+    "9932f3f6584b563571fd717c108c4b68": {
+      "input_sha256": "2783710873d5a9a0f0024a70df3820f4075f42d60e6c48615c85ba36e09803df",
+      "result": {
+        "issues": [
+          {
+            "category": "missing_item",
+            "severity": "high",
+            "evidence_quote": "Apenas o primeiro quadro foi entregue. O segundo deles, no valor de 119,90 não constava na embalagem. Como proceder??",
+            "evidence_quote_en": "Only the first panel was delivered. The second one, worth 119.90, was not included in the packaging. How to proceed??"
+          }
+        ],
+        "sentiment_score": 1,
+        "actionable_for_seller": true,
+        "confidence": 1
+      }
+    },
+    "a80ef27a22ec54eaf9405a9e35e61e3c": {
+      "input_sha256": "9b3a891179c5bfd9cdb6f1846706c7b122a75144f6642be3b5dd7c5ef3fe6bff",
+      "result": {
+        "issues": [
+          {
+            "category": "wrong_product",
+            "severity": "high",
+            "evidence_quote": "ENTREGARAM O LIVRO ERRADO NÃO CONSIGO CONTACTAR NINGUÉM DA lannister. O SISTEMA NÃO ACEITA QUANDO TENTO CADASTRAR A TROCA PELO LIVRO CORRETO. ENTREM EM CONTATO COMIGO!!",
+            "evidence_quote_en": "DELIVERED THE WRONG BOOK, CANNOT CONTACT ANYONE FROM lannister. THE SYSTEM DOES NOT ACCEPT WHEN I TRY TO REGISTER THE CORRECT BOOK EXCHANGE. CONTACT ME!!"
+          }
+        ],
+        "sentiment_score": 0.5,
+        "actionable_for_seller": true,
+        "confidence": 1
+      }
+    },
+    "af64e6ad98a3979e11c42f322e1b7a67": {
+      "input_sha256": "957669474b78e36fdc598019d19eb3a2c3e8c0fc2fe7e5ef48f60ae1452ece13",
+      "result": {
+        "issues": [
+          {
+            "category": "missing_item",
+            "severity": "medium",
+            "evidence_quote": "Recebi apenas a rede, não foi enviado os ganchos. Favor entrar em contato.",
+            "evidence_quote_en": "I received only the net, the hooks were not sent. Please contact me."
+          }
+        ],
+        "sentiment_score": 0.5,
+        "actionable_for_seller": true,
+        "confidence": 1
+      }
+    },
+    "beebe11266b7d765a2f21b8a8d70ecd3": {
+      "input_sha256": "c0f3db4d987cbe63e1c37486dd1e31495ed1dac8496edc4fbdaeff6ff3a6f992",
+      "result": {
+        "issues": [
+          {
+            "category": "missing_item",
+            "severity": "high",
+            "evidence_quote": "RECEBI SÓ UM(1) NO DIA 01/05/2018.",
+            "evidence_quote_en": "I received only one (1) on May 1, 2018."
+          }
+        ],
+        "sentiment_score": 1,
+        "actionable_for_seller": true,
+        "confidence": 1
+      }
+    },
+    "815e1b04599377590d462178d524b69a": {
+      "input_sha256": "66b3971ae52cfa5b8b7998c734086ebec30ff3df154b7d239f6dfc06b6935264",
+      "result": {
+        "issues": [
+          {
+            "category": "quality_defect",
+            "severity": "medium",
+            "evidence_quote": "e ainda colocaram a caixa da escova dentro de outra caixa da Marca Laka toda rasgada, um descaso com o consumidor.",
+            "evidence_quote_en": "and they put the box of the brush inside another Marca Laka box that was torn, a disregard for the consumer."
+          }
+        ],
+        "sentiment_score": 1,
+        "actionable_for_seller": false,
+        "confidence": 1
+      }
+    },
+    "797f76570719ad7b58952097d86a2e97": {
+      "input_sha256": "2cbce25704b375cb5aec66eb6aa5ff49e2f8536a63c0852c7184ebeb1eafd82c",
+      "result": {
+        "issues": [
+          {
+            "category": "seller_communication",
+            "severity": "high",
+            "evidence_quote": "não recebi 1 cartucho e não tive retorno do vendedor e nem do baratheon. vou ter que cancelar a compra se não receber contato.",
+            "evidence_quote_en": "I did not receive 1 cartridge and did not receive a response from the seller or Baratheon. I will have to cancel the purchase if I do not receive a response."
+          },
+          {
+            "category": "seller_communication",
+            "severity": "high",
+            "evidence_quote": "mas a falta de respeito em não receber retorno me preocupa",
+            "evidence_quote_en": "the lack of respect in not receiving a response worries me."
+          }
+        ],
+        "sentiment_score": 0.5,
+        "actionable_for_seller": true,
+        "confidence": 0.9
+      }
+    },
+    "e27a5c665d9a8976a256ffa4429d2625": {
+      "input_sha256": "76da91271fe3026a501cc1ce247b709b1fdb1a25ebc29ec301066126e35d0600",
+      "result": {
+        "issues": [
+          {
+            "category": "missing_item",
+            "severity": "high",
+            "evidence_quote": "Recebi somente 1 jogo de lençol, sendo paguei por 2.",
+            "evidence_quote_en": "I received only 1 set of towels, when I paid for 2."
+          },
+          {
+            "category": "seller_communication",
+            "severity": "high",
+            "evidence_quote": "Liguei para a loja e ficaram de me dar um retorno na segunda-feira.",
+            "evidence_quote_en": "I called the store and they said they would give me a response on Tuesday."
+          }
+        ],
+        "sentiment_score": 0.5,
+        "actionable_for_seller": true,
+        "confidence": 0.9
+      }
+    },
+    "cdcadf28d3a4ece5e4a2922c47efdfee": {
+      "input_sha256": "3a53b0965b0a8b68134b5b0f147283407aef965fdc4bbaa8bdcb9182205e7346",
+      "result": {
+        "issues": [
+          {
+            "category": "missing_item",
+            "severity": "high",
+            "evidence_quote": "Estou aguardando contato para saber o que aconteceu com o produto.",
+            "evidence_quote_en": "You are waiting for a contact to know what happened with the product."
+          }
+        ],
+        "sentiment_score": 0.5,
+        "actionable_for_seller": true,
+        "confidence": 0.9
+      }
+    },
+    "12157c1f7de827bcbc8473b92c9b020c": {
+      "input_sha256": "a3acfe7470231a0f7afd9bd2c8555e95f2417a41532897c2d46b64aaee9495d7",
+      "result": {
+        "issues": [
+          {
+            "category": "missing_item",
+            "severity": "high",
+            "evidence_quote": "O PEDIDO CHEGOU ERRADO, FALTANDO UM ITEM , PAGUEI POR DOIS RETROVISORES E RECEBI SOMENTE UM,!!!",
+            "evidence_quote_en": "O PEDIDO CHEGOU ERRADO, FALTANDO UM ITEM , PAGUEI POR DOIS RETROVISORES E RECEBI SOMENTE UM,!!!"
+          },
+          {
+            "category": "seller_communication",
+            "severity": "high",
+            "evidence_quote": "AGUARDO SOLUÇÃO URGENTE!!!",
+            "evidence_quote_en": "AGUARDO SOLUÇÃO URGENTE!!!"
+          }
+        ],
+        "sentiment_score": 1,
+        "actionable_for_seller": true,
+        "confidence": 1
+      }
+    },
+    "dd503a79da4a1347fe5169a1d15bb869": {
+      "input_sha256": "8492b2bea26ea8a3d74269e819ae89da14b3ea03cc1018a1728077bc8ae87152",
+      "result": {
+        "issues": [
+          {
+            "category": "wrong_product",
+            "severity": "medium",
+            "evidence_quote": "O produto não corresponde com o original, a composição é diferente, mais usando o mesmo nome na embalagem, por esse motivo vou fazer a devolução do mesmo",
+            "evidence_quote_en": "O produto não corresponde com o original, a composição é diferente, mais usando o mesmo nome na embalagem, por esse motivo vou fazer a devolução do mesmo"
+          }
+        ],
+        "sentiment_score": 1,
+        "actionable_for_seller": false,
+        "confidence": 1
+      }
+    },
+    "36f89fb6042fdc08a3a01658a0d51e15": {
+      "input_sha256": "f2dfdaa56e5e834330f81bb5546f9c1e80c43579f3c58e31158a9d4677e3a954",
+      "result": {
+        "issues": [
+          {
+            "category": "missing_item",
+            "severity": "high",
+            "evidence_quote": "Comprei dois pentes de memória e me enviaram apenas um. Estou aguardando o prazo de resposta sobre esse problema.",
+            "evidence_quote_en": "Comprei dois pentes de memória e me enviaram apenas um. Estou aguardando o prazo de resposta sobre esse problema."
+          }
+        ],
+        "sentiment_score": 1,
+        "actionable_for_seller": false,
+        "confidence": 1
+      }
+    },
+    "1d5b8cc3cac5888ebfc80a0dcd337f07": {
+      "input_sha256": "78c075b0d947099df97c691dd66ac3a08b9b0bc09aa294bf96315ba947e40be1",
+      "result": {
+        "issues": [],
+        "sentiment_score": -1,
+        "actionable_for_seller": false,
+        "confidence": 1
+      }
+    },
+    "efc15ba9ebc809fba2604db677503367": {
+      "input_sha256": "7ca504719dafd7021c29c9d272fa55610ff4a5fab211562e72c5670235b4cbbe",
+      "result": {
+        "issues": [],
+        "sentiment_score": -1,
+        "actionable_for_seller": false,
+        "confidence": 1
+      }
+    },
+    "47474f33a1ec94412420ce64fb78c480": {
+      "input_sha256": "cd5a2f8f10b54fccc7189509f90e4ae7c392e8945cab93579020e0f89fbe2c5e",
+      "result": {
+        "issues": [
+          {
+            "category": "missing_item",
+            "severity": "high",
+            "evidence_quote": "FIZ DUAS COMPRAS E APENAS UMA DELAS ME FOI ENTREGUE, RECEBI A BASE DERMACOL PORÉM O KIT SECA BARRIGA 3 MESES NÃO ME FOI ENTREGUE ",
+            "evidence_quote_en": "I MADE TWO PURCHASES AND ONLY ONE OF THEM WAS DELIVERED TO ME, I RECEIVED THE DERMACOL BASE BUT THE KIT FOR DRY BUMBS FOR 3 MONTHS WAS NOT DELIVERED TO ME."
+          }
+        ],
+        "sentiment_score": -1,
+        "actionable_for_seller": false,
+        "confidence": 1
+      }
+    },
+    "c7dce52ea0e2b966e8911feef6c3c8d2": {
+      "input_sha256": "2e4e457430aba99339edc2229b48932a1dc4f1bfe89be769c7307472cf9062b6",
+      "result": {
+        "issues": [
+          {
+            "category": "missing_item",
+            "severity": "high",
+            "evidence_quote": "o produto chegou incompleto!",
+            "evidence_quote_en": "The product arrived incomplete."
+          },
+          {
+            "category": "seller_communication",
+            "severity": "high",
+            "evidence_quote": "Não consigo contato nem com a lojas lannister nem com o telefone que veio na nota.",
+            "evidence_quote_en": "I can't contact neither the Lannister stores nor the phone that came in the note."
+          }
+        ],
+        "sentiment_score": 0.5,
+        "actionable_for_seller": true,
+        "confidence": 0.9
+      }
+    },
+    "cc700bb8a3109751027ead279956eca4": {
+      "input_sha256": "0a967a06b0d8a0ef6510c3535a17c897da7883a3ea1bfc56e9b555d8407f4194",
+      "result": {
+        "issues": [
+          {
+            "category": "missing_item",
+            "severity": "high",
+            "evidence_quote": "Comprei dois puff, recebi apenas 1, escrevi email para a empresa e ninguém respondeu",
+            "evidence_quote_en": "I bought two puffs, received only one, wrote an email to the company and nobody responded."
+          }
+        ],
+        "sentiment_score": 0.5,
+        "actionable_for_seller": true,
+        "confidence": 0.9
+      }
+    },
+    "fb43f20342087a1d1d8c8430c473c3af": {
+      "input_sha256": "609d3135587422b0954937958dd6a36478402a95654801fad0ade722706defe5",
+      "result": {
+        "issues": [
+          {
+            "category": "missing_item",
+            "severity": "high",
+            "evidence_quote": "Recebi somente uma peça.",
+            "evidence_quote_en": "I received only one piece."
+          }
+        ],
+        "sentiment_score": 0.5,
+        "actionable_for_seller": false,
+        "confidence": 0.9
+      }
+    },
+    "749262d105d4d83545db26a046bf9ea5": {
+      "input_sha256": "67ccad7682676e52eb3f8bd81c80c0c85630159abbcd5c6da0c87ebc57e0846e",
+      "result": {
+        "issues": [
+          {
+            "category": "quality_defect",
+            "severity": "high",
+            "evidence_quote": "O produto veio todo quebrado o papel bolha marrom lotado de sombra, não recomendo a loja quero meu dinheiro de volta péssima entrega.",
+            "evidence_quote_en": "The product arrived broken with a lot of makeup in the brown bubble wrap, I don't recommend the store, I want my money back, terrible delivery."
+          }
+        ],
+        "sentiment_score": 0.5,
+        "actionable_for_seller": false,
+        "confidence": 0.9
+      }
+    },
+    "5270574b820e27ed76cdb13a6dfc4391": {
+      "input_sha256": "b3f29052b805e79cec8603d40fe7b6ac9170379406e6da2705af699d2bc1066e",
+      "result": {
+        "issues": [
+          {
+            "category": "wrong_product",
+            "severity": "high",
+            "evidence_quote": "Paguei pelo Kit completo:shampoo,condicionador e ativador de cachos e recebi apenas o ativador de cachos,isso tá errado",
+            "evidence_quote_en": "I paid for the full kit: shampoo, conditioner, and a hair straightening treatment, but I only received the hair straightening treatment. This is wrong."
+          }
+        ],
+        "sentiment_score": 1,
+        "actionable_for_seller": true,
+        "confidence": 1
+      }
+    },
+    "c2513198ce19a7aa026b0e80ab64d843": {
+      "input_sha256": "5ae0737ef945c419da1bf200e4bb0872a9b18e829ce362348ca5b6cffd7bd297",
+      "result": {
+        "issues": [
+          {
+            "category": "seller_communication",
+            "severity": "high",
+            "evidence_quote": "Estão querendo cancelar a compra agora e me informaram somente porque entrei em contato no dia 25, senão estaria esperando até agora. Lamentáve",
+            "evidence_quote_en": "They are now trying to cancel the purchase and informed me only because I contacted them on the 25th, otherwise I would have been waiting until now. I apologize."
+          }
+        ],
+        "sentiment_score": 1,
+        "actionable_for_seller": true,
+        "confidence": 1
+      }
+    },
+    "b23884a121b0d630f7f4a8120aa9b0e2": {
+      "input_sha256": "e1a0192ae7a849cf4968b7fb4f7cb031b51e85e4d59dbd3c53494541817ff5e1",
+      "result": {
+        "issues": [
+          {
+            "category": "missing_item",
+            "severity": "high",
+            "evidence_quote": "Além disso, o esterilizador veio com a caixa aberta/rasgada.",
+            "evidence_quote_en": "Besides, the sterilizer came with an open/cracked box."
+          }
+        ],
+        "sentiment_score": 1,
+        "actionable_for_seller": true,
+        "confidence": 1
+      }
+    },
+    "ea45c41592967c2aa03ca9826b790873": {
+      "input_sha256": "9b365f736d7d326dc34871a1da4fa15a0bbd67521abf255b077fed556d0dcb55",
+      "result": {
+        "issues": [
+          {
+            "category": "wrong_product",
+            "severity": "medium",
+            "evidence_quote": "Comprei a base dermacol cor 207, pela cor mostrada nas imagens dá para ver um bege claro porém a cor que chegou é outra.",
+            "evidence_quote_en": "I bought dermacol base color 207, the color shown in the images is a light beige, but the color that arrived is another."
+          }
+        ],
+        "sentiment_score": 1,
+        "actionable_for_seller": false,
+        "confidence": 1
+      }
+    },
+    "a47b3b42fdf8a73281e7f029a6062bdb": {
+      "input_sha256": "68c9d2fda19528bbcfeb35c40813e982b93e9a9494e9842a0858dc7ebbc33a95",
+      "result": {
+        "issues": [
+          {
+            "category": "missing_item",
+            "severity": "high",
+            "evidence_quote": "O produto veio na caixa original, sem qualquer proteção, o correio durante a entrega rasgou toda a caixa, e ao testar, constatei que somente um dos fones funcionava.",
+            "evidence_quote_en": "The product came in the original box with no protection, the courier damaged the entire box during delivery, and upon testing, I found that only one of the headphones was working."
+          },
+          {
+            "category": "quality_defect",
+            "severity": "medium",
+            "evidence_quote": "Pedi a troca.",
+            "evidence_quote_en": "I requested a replacement."
+          }
+        ],
+        "sentiment_score": 1,
+        "actionable_for_seller": true,
+        "confidence": 1
+      }
+    },
+    "673c0f70f65a2758382210d0c374de31": {
+      "input_sha256": "89aa90fe9ad5f1e21dacf224863182116f5ad55fdb1b3a1a9c4a77d72795c26b",
+      "result": {
+        "issues": [
+          {
+            "category": "wrong_product",
+            "severity": "high",
+            "evidence_quote": "Fiz o pedido de duas unidades do produto. Recebi somente uma unidade de um produto diferente!",
+            "evidence_quote_en": "I ordered two units of the product. I received only one unit of a different product."
+          }
+        ],
+        "sentiment_score": 1,
+        "actionable_for_seller": true,
+        "confidence": 1
+      }
+    },
+    "a13cd550dd016412ac1318e1990882ab": {
+      "input_sha256": "9ad80d13d4579ef55041679461f3511d34953176e54cfbd41f946fce0c587da0",
+      "result": {
+        "issues": [
+          {
+            "category": "wrong_product",
+            "severity": "high",
+            "evidence_quote": "Ola. Ontem recebi meu Revoflex quebrado e faltando pedaços. Quero saber como troca-lo.",
+            "evidence_quote_en": "Hello. Yesterday I received the Revoflex broken and missing pieces. I want to know how to exchange it."
+          }
+        ],
+        "sentiment_score": 1,
+        "actionable_for_seller": true,
+        "confidence": 1
+      }
+    },
+    "1b89f2633d7ab40957461f786d6ec7c4": {
+      "input_sha256": "8f84346e92da355f02f0008b22ab5c2810f936c547903ecd83fe5658758167d2",
+      "result": {
+        "issues": [
+          {
+            "category": "quality_defect",
+            "severity": "high",
+            "evidence_quote": "Comprei e chegou outro produto de cor diferente e qualidade bem inferior. Só transtorno nessa compra.",
+            "evidence_quote_en": "I bought and received another product of a different color and inferior quality. It's only a hassle in this purchase."
+          }
+        ],
+        "sentiment_score": 1,
+        "actionable_for_seller": true,
+        "confidence": 1
+      }
+    },
+    "7c5b4989db1d976c7c04dca544630bf6": {
+      "input_sha256": "e7f5e4aeb8657042bd3b271d679d807d1200aa09382e41d2d1c3207925ab07c2",
+      "result": {
+        "issues": [
+          {
+            "category": "missing_item",
+            "severity": "high",
+            "evidence_quote": "Em um primeiro instante fiquei satisfeita, pois o pedido chegou antes do prazo, mais quando abri a caixa o pedido estava incompleto. Pedi dois jogos e só veio um.",
+            "evidence_quote_en": "I was initially satisfied because the order arrived before the deadline, but when I opened the box, the order was incomplete. I requested two sets, but only one came."
+          }
+        ],
+        "sentiment_score": 0.3,
+        "actionable_for_seller": true,
+        "confidence": 0.8
+      }
+    },
+    "e80de1f9ec3c71ece8734667a2e874a9": {
+      "input_sha256": "9de680506cb9fe755e6b8c8c8fa0e7038db9a7e5d37ffcfe9932bf4d81fc1722",
+      "result": {
+        "issues": [
+          {
+            "category": "missing_item",
+            "severity": "high",
+            "evidence_quote": "lannister o produto foi entregue faltando um item, eram para serem dois grampos só foi entregue um.",
+            "evidence_quote_en": "The product was delivered missing one item, they were supposed to be two clips, but only one came."
+          }
+        ],
+        "sentiment_score": 0.3,
+        "actionable_for_seller": true,
+        "confidence": 0.8
+      }
+    },
+    "2af448a007358e797cbc5a0aa353bc14": {
+      "input_sha256": "0c5e0396526ac50160bf303153bec0f2fed36f5bf0322aa7aafa257079f6528d",
+      "result": {
+        "issues": [
+          {
+            "category": "missing_item",
+            "severity": "high",
+            "evidence_quote": "Estou aguardando uma solução. Até agora nada.",
+            "evidence_quote_en": "Estou aguardando uma solução. Até agora nada."
+          },
+          {
+            "category": "seller_communication",
+            "severity": "high",
+            "evidence_quote": "Estou aguardando uma solução. Até agora nada.",
+            "evidence_quote_en": "Estou aguardando uma solução. Até agora nada."
+          }
+        ],
+        "sentiment_score": 1,
+        "actionable_for_seller": true,
+        "confidence": 1
+      }
+    },
+    "3ff8285931cc9b54c9ad22ba78957f63": {
+      "input_sha256": "390d39748046a6f886e9de5a1734b633b6bd09d4498026e72c38faaced648427",
+      "result": {
+        "issues": [
+          {
+            "category": "missing_item",
+            "severity": "high",
+            "evidence_quote": "Estou insatisfeita.",
+            "evidence_quote_en": "Estou insatisfeita."
+          }
+        ],
+        "sentiment_score": 1,
+        "actionable_for_seller": true,
+        "confidence": 1
+      }
+    },
+    "5bee01821bfbeaa36dae5a57e16d4e13": {
+      "input_sha256": "2ddd31da89a26065a68cb65ee872e03a6289b9b0fdb1190c94b67931b6dd0f0a",
+      "result": {
+        "issues": [
+          {
+            "category": "seller_communication",
+            "severity": "medium",
+            "evidence_quote": "Estou aguardando o contato da empresa para resolver o problema da entrega faltando produto.",
+            "evidence_quote_en": "You are awaiting the company's contact to resolve the delivery problem of missing products."
+          }
+        ],
+        "sentiment_score": 1,
+        "actionable_for_seller": true,
+        "confidence": 1
+      }
+    },
+    "996e66fb70037a65bbac5c0f4d7401c1": {
+      "input_sha256": "0f25eccd2e28313a17c915ae809c50fb8d6d039582514d8a64fb8e7ef3b1656d",
+      "result": {
+        "issues": [
+          {
+            "category": "wrong_product",
+            "severity": "high",
+            "evidence_quote": "Comprei o produto pelo seu formato arredondado nas pontas e me foi entregue três caixas quadradas com as pontas diferentes do anunciado. Ou seja, fui enganada. Exijo retorno",
+            "evidence_quote_en": "I bought the product for its rounded ends, but I received three square boxes with different ends as advertised. In other words, I was cheated. I demand a refund."
+          }
+        ],
+        "sentiment_score": 1,
+        "actionable_for_seller": true,
+        "confidence": 1
+      }
+    },
+    "5317d9f05757cb578c099b5b8e9fc3fd": {
+      "input_sha256": "2e074b353490ecd4f06cdad23ab9c6c9823baf44d6b8ed5ad7b27adfaf611d25",
+      "result": {
+        "issues": [
+          {
+            "category": "seller_communication",
+            "severity": "high",
+            "evidence_quote": "tentei contato e pra minha surpresa só tem contato virtual, tentei ligar e ninguém para atender.!!",
+            "evidence_quote_en": "I tried contacting and to my surprise, there's only virtual contact, I tried calling and no one answered.!!"
+          }
+        ],
+        "sentiment_score": 0.5,
+        "actionable_for_seller": true,
+        "confidence": 0.9
+      }
+    },
+    "4826ebab1e7f7b7948d9c2ff1b0bfa86": {
+      "input_sha256": "b68e0f7e5ea71b7ee0f7cddd0dd76b7decc4f3d7803c3a11f4eaf59e61dad31e",
+      "result": {
+        "issues": [
+          {
+            "category": "missing_item",
+            "severity": "high",
+            "evidence_quote": "Comprei 2 e só me entregaram 1",
+            "evidence_quote_en": "I bought 2 and only received 1"
+          }
+        ],
+        "sentiment_score": -0.5,
+        "actionable_for_seller": false,
+        "confidence": 0.9
+      }
+    },
+    "92a38f57ab94ec95ac80bc79b6fe97a6": {
+      "input_sha256": "4fa470b2c257b83a850dbd628a51ec24607ea808c36a8c103d98b31dc49eb84c",
+      "result": {
+        "issues": [
+          {
+            "category": "wrong_product",
+            "severity": "medium",
+            "evidence_quote": "Os lustres vieram numa cor totalmente diferente do anunciado",
+            "evidence_quote_en": "The chandeliers came in a completely different color from what was advertised"
+          }
+        ],
+        "sentiment_score": -0.5,
+        "actionable_for_seller": true,
+        "confidence": 0.9
+      }
+    },
+    "117465724c2029999e0458cf1fab52bb": {
+      "input_sha256": "b6474883504f2ddc0ff817880a82767be724a2244bf5f27050a8443ba4fdc4b1",
+      "result": {
+        "issues": [
+          {
+            "category": "missing_item",
+            "severity": "high",
+            "evidence_quote": "Comprei 2 carnibol, foi entregue apenas 1. Na nota fiscal disse que sao embalados separados e podem chegar separados.",
+            "evidence_quote_en": "I bought 2 carnibol, only 1 was delivered. The note said they are packed separately and may arrive separately."
+          }
+        ],
+        "sentiment_score": -0.5,
+        "actionable_for_seller": true,
+        "confidence": 0.8
+      }
+    },
+    "97597e688350889d0ad9b90ebe949d8a": {
+      "input_sha256": "e337f10199913695782793da638e56e1577db1d1f46810878760d3ba0fcb5d22",
+      "result": {
+        "issues": [
+          {
+            "category": "seller_communication",
+            "severity": "medium",
+            "evidence_quote": "Mas logo depois recebi outro dizendo q se eu não respondesse um questionário era considerado q tinha recebido o produto",
+            "evidence_quote_en": "But shortly after, I received another email stating that if I did not respond to a questionnaire, it would be considered that I had received the product."
+          }
+        ],
+        "sentiment_score": 0.5,
+        "actionable_for_seller": true,
+        "confidence": 0.8
+      }
+    },
+    "cd9024db094fdf3ec53cea6405691382": {
+      "input_sha256": "7eae058a5973f767fd3cee784789af85a92853552f3b971928946ae8c062ffd0",
+      "result": {
+        "issues": [
+          {
+            "category": "quality_defect",
+            "severity": "medium",
+            "evidence_quote": "o mesmo veio com o encosto do braço quebrado",
+            "evidence_quote_en": "The same came with the armrest broken."
+          },
+          {
+            "category": "packaging",
+            "severity": "low",
+            "evidence_quote": "uma vez que veio embalado em um papel fino comum",
+            "evidence_quote_en": "Once packed in a common thin paper."
+          }
+        ],
+        "sentiment_score": -0.5,
+        "actionable_for_seller": false,
+        "confidence": 0.9
+      }
+    },
+    "a3b6ec76098bc60b0a1ab054b723a9ec": {
+      "input_sha256": "952b1bedbd4ae70e63dcfee41881b58b32edc605b00aa608e08d2525d80f7f17",
+      "result": {
+        "issues": [
+          {
+            "category": "delivery_late",
+            "severity": "high",
+            "evidence_quote": "acontece que infelizmente que a entrega a caixa veio avariada e faltando parafusos da mesma qued deve ter caido no caminho isso tem que ser visto com mais rigor",
+            "evidence_quote_en": "It happens that unfortunately the delivery arrived damaged and missing screws, which must have fallen during the journey, this should be looked at more rigorously."
+          }
+        ],
+        "sentiment_score": -0.7,
+        "actionable_for_seller": false,
+        "confidence": 0.9
+      }
+    },
+    "2fcef827bfa0048a2bd8df5ef991dfa7": {
+      "input_sha256": "71c371e5e5d07754d9e720e46789cd40e31da7762dbc2ec465b27995b6326e1a",
+      "result": {
+        "issues": [
+          {
+            "category": "missing_item",
+            "severity": "high",
+            "evidence_quote": "RECEBI APENAS UM DOS PRODUTOS,RELÓGIO DE PEROLA.MAS O OUTRO RELÓGIO DE LED,NEM SINAL DELE.",
+            "evidence_quote_en": "RECEIVED ONLY ONE OF THE PRODUCTS, THE BEADLED WATCH. THE OTHER LED WATCH WAS NOT THERE AT ALL."
+          },
+          {
+            "category": "seller_communication",
+            "severity": "medium",
+            "evidence_quote": "COMO PODE?A EMBALAGEM SÓ VEIO O RELÓGIO DE PÉROLA E JÁ USEI.",
+            "evidence_quote_en": "HOW CAN THIS BE? THE BOX ONLY CONTAINED THE BEADLED WATCH AND I HAVE ALREADY USED IT."
+          }
+        ],
+        "sentiment_score": 0.5,
+        "actionable_for_seller": true,
+        "confidence": 0.8
+      }
+    },
+    "701fdce9baebef323e3e2358b416b823": {
+      "input_sha256": "d9efd7bbc43a911c17eedfb4f3afd546cad1566217db75781736360a9bb728ff",
+      "result": {
+        "issues": [],
+        "sentiment_score": 0.5,
+        "actionable_for_seller": false,
+        "confidence": 0.7
+      }
+    },
+    "597312daca8539590e53e4e5bb789bd2": {
+      "input_sha256": "80f5fef1505d892a8fe199effe7bda87c3fe7e3c943f6bed2c7b68ff140380d6",
+      "result": {
+        "issues": [],
+        "sentiment_score": 0.5,
+        "actionable_for_seller": false,
+        "confidence": 0.7
+      }
+    },
+    "2ed55cf7e4a4692f3ca5aa9c76e790a6": {
+      "input_sha256": "1d0fa0d8fe471c8c954cc417fe663b5e10f8232bf382e2cf09b2d8337ba3fa7c",
+      "result": {
+        "issues": [],
+        "sentiment_score": -0.5,
+        "actionable_for_seller": false,
+        "confidence": 0.95
+      }
+    },
+    "656dbd8c0743a1ed96d769026d0badfd": {
+      "input_sha256": "52eb99b851d4e572967beea295f38000065a1c210d98ab886bd127f545d24277",
+      "result": {
+        "issues": [
+          {
+            "category": "packaging",
+            "severity": "high",
+            "evidence_quote": "A caixa do produto chegou amassada.",
+            "evidence_quote_en": "The box arrived dented."
+          }
+        ],
+        "sentiment_score": -1,
+        "actionable_for_seller": true,
+        "confidence": 1
+      }
+    },
+    "319f7e3f45fa7d6109284b5fc7c715b7": {
+      "input_sha256": "68c73d686f44097f149081da3d8b18d96945922eeaadf3c8cfbc2385d12b0157",
+      "result": {
+        "issues": [
+          {
+            "category": "delivery_late",
+            "severity": "high",
+            "evidence_quote": "Comprei 2 produtos e somente 1 chegou, aguardando retorno da lojas lannister sobre isso.",
+            "evidence_quote_en": "I bought 2 products and only 1 arrived, awaiting a response from the Lannister stores about this."
+          }
+        ],
+        "sentiment_score": -1,
+        "actionable_for_seller": false,
+        "confidence": 1
+      }
+    },
+    "f30f0034384b3a176508296ea0ab302c": {
+      "input_sha256": "a185bf9232c9c23648fc6bd6463a1e99866816d2f8d5c09ddd877f99e0207d3c",
+      "result": {
+        "issues": [
+          {
+            "category": "quality_defect",
+            "severity": "medium",
+            "evidence_quote": "O produto apresenta riscos, aparência de usado, apesar de estar funcionando.",
+            "evidence_quote_en": "The product has risks, used appearance, despite functioning."
+          }
+        ],
+        "sentiment_score": -0.5,
+        "actionable_for_seller": true,
+        "confidence": 1
+      }
+    },
+    "c330f4e722e633eeb0321c2171f51eae": {
+      "input_sha256": "deffe0eb78a6d9e1b638cd6ad2c76a8c523133c3eb9bedc0d604a226eeda3b4c",
+      "result": {
+        "issues": [
+          {
+            "category": "quality_defect",
+            "severity": "low",
+            "evidence_quote": "O produto chegou como o esperado mais no decorrer da entrega meu produto veio amassado e caixa rasgada... sei que a culpa fio dos correios.",
+            "evidence_quote_en": "The product arrived as expected, but during delivery my product arrived crushed and the box was torn... I know the fault is with the postal service."
+          },
+          {
+            "category": "delivery_late",
+            "severity": "low",
+            "evidence_quote": "O produto chegou como o esperado mais no decorrer da entrega meu produto veio amassado e caixa rasgada... sei que a culpa fio dos correios.",
+            "evidence_quote_en": "The product arrived as expected, but during delivery my product arrived crushed and the box was torn... I know the fault is with the postal service."
+          }
+        ],
+        "sentiment_score": -0.5,
+        "actionable_for_seller": false,
+        "confidence": 1
+      }
+    },
+    "6e90b745db20f3b8f6c2d76d02fb79a2": {
+      "input_sha256": "c1c249234131a9072e103963d44781274a199dee55de457e8f53886339dfac13",
+      "result": {
+        "issues": [
+          {
+            "category": "delivery_late",
+            "severity": "high",
+            "evidence_quote": "A capa que recebi, apesar da nota estar com as especificações corretas não foi compatível com o meu aparelho.. A capa veio com um tamanho maior.",
+            "evidence_quote_en": "The packaging I received, despite having the correct specifications, was not compatible with my device. The packaging came in a larger size."
+          },
+          {
+            "category": "seller_communication",
+            "severity": "high",
+            "evidence_quote": "Tentei contato com o stark, e não obtive resposta.",
+            "evidence_quote_en": "I tried contacting stark, but did not receive a response."
+          }
+        ],
+        "sentiment_score": -0.75,
+        "actionable_for_seller": true,
+        "confidence": 0.9
+      }
+    },
+    "55b264ecbf647b9ba42447e608489571": {
+      "input_sha256": "5b9dcebe424948ca5f308b175411bfef7ebfcd658dfcf4e0dbc28c3c19b62636",
+      "result": {
+        "issues": [
+          {
+            "category": "wrong_product",
+            "severity": "high",
+            "evidence_quote": "ja abri uma reclamação, estou aguardando retorno",
+            "evidence_quote_en": "I have already filed a complaint, waiting for a response"
+          }
+        ],
+        "sentiment_score": -0.8,
+        "actionable_for_seller": false,
+        "confidence": 0.95
+      }
+    },
+    "6f89c10a08e4c11fe7b33378a736d7ac": {
+      "input_sha256": "78b218d9dc59f2994fad2b26d92eda41029d1e002dc960abea091d2093f9ca90",
+      "result": {
+        "issues": [
+          {
+            "category": "missing_item",
+            "severity": "high",
+            "evidence_quote": "Recebi somente uma. Porém comprei duas",
+            "evidence_quote_en": "I received only one. I bought two"
+          },
+          {
+            "category": "quality_defect",
+            "severity": "medium",
+            "evidence_quote": "Não gostei da qualidade do produto e não veio embalada com etiqueta. Fica a impressão que é usada",
+            "evidence_quote_en": "I did not like the quality of the product and it did not come with a label. It gives the impression that it is used"
+          }
+        ],
+        "sentiment_score": -0.75,
+        "actionable_for_seller": true,
+        "confidence": 0.9
+      }
+    },
+    "71d832657674234d388cf5d7a43b3de1": {
+      "input_sha256": "d6ef0464b621f674bc37a71910155a7fc5e5d387dc010b6d30a26dc2509ee369",
+      "result": {
+        "issues": [],
+        "sentiment_score": 0.5,
+        "actionable_for_seller": false,
+        "confidence": 0.9
+      }
+    },
+    "8f451e1cf55dd3f4a5c6e9607a07c561": {
+      "input_sha256": "478ba95f3c07f09e62908aede748b7bed00ad5d9fbd2513d688614a2523232c5",
+      "result": {
+        "issues": [
+          {
+            "category": "wrong_product",
+            "severity": "high",
+            "evidence_quote": "foi entregue um produto diferente da compra efetuada.",
+            "evidence_quote_en": "was delivered a different product from the purchase made."
+          }
+        ],
+        "sentiment_score": -0.5,
+        "actionable_for_seller": true,
+        "confidence": 0.9
+      }
+    },
+    "ee063b2dbb10572a6116da74b4c38ead": {
+      "input_sha256": "f820755ad44d4c665009bbb0e177ed2cc23d22e8dc99d1228e3495f61c52572a",
+      "result": {
+        "issues": [
+          {
+            "category": "delivery_late",
+            "severity": "medium",
+            "evidence_quote": "Fiz o pedido de duas caixas de lente, sendo que recebi em dia diferente",
+            "evidence_quote_en": "I received the products on a different day after placing the order for two boxes of lenses."
+          }
+        ],
+        "sentiment_score": -0.5,
+        "actionable_for_seller": false,
+        "confidence": 0.9
+      }
+    },
+    "3163f181a888c2a1ab13a5c69334358d": {
+      "input_sha256": "427970425a5ddb224f4caba7967f190ffeccffc6c91e469c7d19268492886847",
+      "result": {
+        "issues": [
+          {
+            "category": "packaging",
+            "severity": "high",
+            "evidence_quote": "Estou no aguardo da coleira e do bebedor. Por enquanto nem me avisaram que seria enviado depois. Nem um contato da parte dos vendedores.",
+            "evidence_quote_en": "Estou no aguardo da coleira e do bebedor. Por enquanto nem me avisaram que seria enviado depois. Nem um contato da parte dos vendedores."
+          }
+        ],
+        "sentiment_score": -0.5,
+        "actionable_for_seller": true,
+        "confidence": 0.8
+      }
+    },
+    "ed296f90dad48a800c5f2b7174b2cf37": {
+      "input_sha256": "3d076ca46a6ab22590fbe4f6f34e935e7783dc6c058f482e888ce7e97fabeb9d",
+      "result": {
+        "issues": [
+          {
+            "category": "quality_defect",
+            "severity": "high",
+            "evidence_quote": "um dos cartuchos chegou a ficar com a caixa rasgada e aberta.",
+            "evidence_quote_en": "um dos cartuchos chegou a ficar com a caixa rasgada e aberta."
+          }
+        ],
+        "sentiment_score": -0.7,
+        "actionable_for_seller": false,
+        "confidence": 0.9
+      }
+    },
+    "31c31deec344ce8c892f9bd3c6a1b478": {
+      "input_sha256": "3f5733973eeec7e9f9d81453642ab16494681165721ae8dd83a91768455ea520",
+      "result": {
+        "issues": [
+          {
+            "category": "quality_defect",
+            "severity": "medium",
+            "evidence_quote": "Produto de boa qualidade , entrega rápida, infelizmente não foi bem embalado e chegou com um produto quebrado !",
+            "evidence_quote_en": "Produto de boa qualidade , entrega rápida, infelizmente não foi bem embalado e chegou com um produto quebrado !"
+          }
+        ],
+        "sentiment_score": -0.4,
+        "actionable_for_seller": false,
+        "confidence": 0.8
+      }
+    },
+    "e5d66ac26e0f3dd7fc3d20fb2066aafd": {
+      "input_sha256": "966b4295a0488473f50b858c8504f3cd1d08ea53b3bd9eb6bb8f6effaddf62dd",
+      "result": {
+        "issues": [
+          {
+            "category": "missing_item",
+            "severity": "high",
+            "evidence_quote": "recebi apenas um em casa, os demais fui obrigada a buscar nos correios.",
+            "evidence_quote_en": "I received only one at home, the others I had to fetch from the post office."
+          }
+        ],
+        "sentiment_score": -0.5,
+        "actionable_for_seller": true,
+        "confidence": 1
+      }
+    },
+    "7facb2aa72475dbda442a959d038dfcb": {
+      "input_sha256": "4ce1da3f45eea7ed393725d28430b97f3310b9b7e24254b8b8814e9bd11e09ad",
+      "result": {
+        "issues": [
+          {
+            "category": "quality_defect",
+            "severity": "medium",
+            "evidence_quote": "o wireless do controle fica oscilando e ele funciona melhor somente ligado diretamente no Xbox.",
+            "evidence_quote_en": "The wireless controller's wireless is oscillating and it works better when directly connected to the Xbox."
+          }
+        ],
+        "sentiment_score": -0.5,
+        "actionable_for_seller": false,
+        "confidence": 1
+      }
+    },
+    "414bebc81232ecb8c4e991f94ba80eaf": {
+      "input_sha256": "394d339cd99cdf55214855af5b10929217a9f3b60256ecad86d315d168bda5db",
+      "result": {
+        "issues": [
+          {
+            "category": "wrong_product",
+            "severity": "medium",
+            "evidence_quote": "acredito que por falta de atenção o modelo do meu relógio chegou errado.",
+            "evidence_quote_en": "I believe due to lack of attention, the model of my watch arrived wrong."
+          }
+        ],
+        "sentiment_score": -0.5,
+        "actionable_for_seller": false,
+        "confidence": 1
+      }
+    },
+    "2a9daee5be474afe1d28daa2f7df7dda": {
+      "input_sha256": "827b670cedf03a0e75021b1b0c83d44d354b051f38ab66df8bb1a8394b11d0c4",
+      "result": {
+        "issues": [
+          {
+            "category": "packaging",
+            "severity": "high",
+            "evidence_quote": "A entrega foi no prazo, porem a caixa onde veio a mochila estava rasgada e as fitas descoladas, por sorte não danificou a mochila.",
+            "evidence_quote_en": "The delivery was on time, but the backpack box arrived torned and the tapes were detached, fortunately it didn't damage the backpack."
+          }
+        ],
+        "sentiment_score": -0.5,
+        "actionable_for_seller": true,
+        "confidence": 0.8
+      }
+    }
+  }
+}
